@@ -1,0 +1,65 @@
+@import "../../global.scss";
+
+header{
+    height: 100vh;
+    background-image: url("../../assets/vaccine-background.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    .header-container{
+        margin-left: 10vw;
+        .header-feature-text{
+            h1{
+                color: $primaryColor;
+                font-size: 4.5rem;
+                text-transform: uppercase;
+                font-weight: 900;
+                z-index: 100;
+                position: relative;
+            }
+            .stroke{
+                color: $white;
+                position: absolute;
+                -webkit-text-stroke: 2px $primaryColor;
+                top: 5%;
+                left: 1%;
+                z-index: 0;
+            }
+            h3{
+                color: $secondaryColor;
+                font-weight: 900;
+                font-size: 2.4rem;
+            }
+            h4{
+                color: $textColor;
+                font-weight: 900;
+                text-transform: capitalize;
+                font-size: 2.1rem;
+            }
+        }
+    }
+    .corner-blue-circle{
+        height: 200px;
+        width: 200px;
+        background-color: $primaryColor;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+        border-top-left-radius: 100%;
+        border-top-right-radius: 0;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    header{
+        .header-container{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    }
+}

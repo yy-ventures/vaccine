@@ -1,0 +1,56 @@
+@import "../../global.scss";
+
+.about-section{
+    height: 100vh;
+    position: relative;
+    .about-container{
+        height: 80vh;
+        margin: 0 auto;
+        width: 80%;
+        .about-img-container{
+            height: 80%;
+            width: 80%;
+            border-radius: 25px;
+            box-shadow: 10px 10px 5px 0 rgba(0,0,0,0.1);
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                border: 5px solid $optionalColor;
+                border-radius: 25px;
+            }
+        }
+        .about-data-container{
+            .declare-header{
+                color: $textColor;
+                font-size: 2.4rem;
+            }
+            .global-common-header{
+                color: $secondaryColor;
+                font-size: 2.4rem;
+            }
+            p{
+                font-size: 1.2rem;
+                color: $textColor;
+                width: 70%;
+            }
+            a{
+                text-decoration: none;
+                color: $primaryColor;
+                font-weight: bold;
+            }
+        }
+    }
+    .corner-blue-circle{
+        height: 200px;
+        width: 200px;
+        background-color: $primaryColor;
+        position: absolute;
+        right: 0;
+        top: 0;
+        border-bottom-left-radius: 100%;
+        border-bottom-right-radius: 0;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+    }
+}

@@ -1,6 +1,7 @@
 import './App.css';
 import About from './Components/About/About';
 import Header from './Components/Header/Header';
+import Laureate from './Components/Laureate/Laureate';
 import "./global.scss"
 function App() {
   
@@ -8,6 +9,7 @@ function App() {
     <div className="App">
       <Header/>
       <About/>
+      <Laureate/>
     </div>
   );
 }

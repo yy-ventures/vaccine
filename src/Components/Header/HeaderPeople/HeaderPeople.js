@@ -1,15 +1,15 @@
 import React from 'react';
 import "./HeaderPeople.scss";
-import malala from "../../../assets/people/yousafzai.jpg"
-import thaler from "../../../assets/people/thaler.jpg"
-import dubochet from "../../../assets/people/dubochet.jpg"
+import malala from "../../../assets/people/yousafzai.png"
+import mairead from "../../../assets/people/mairead.jpg"
+import desmond from "../../../assets/people/desmond.jpg"
 import yunus from "../../../assets/people/yunus.jpg"
 const HeaderPeople = () => {
     return (
         <div className="row people-container">
             <div className="col-md-6 left-side-people position-relative">
                 <div className="left-person-one">
-                    <img src={dubochet} alt="dubochet" />
+                    <img src={desmond} alt="desmond" />
                 </div>
                 <div className="left-person-two d-flex justify-content-center align-items-center">
                     <div className="text-center">
@@ -32,7 +32,7 @@ const HeaderPeople = () => {
                     </div>
                 </div>
                 <div className="right-person-three">
-                    <img src={thaler} alt="thaler" />
+                    <img src={mairead} alt="mairead" />
                 </div>
             </div>
         </div>

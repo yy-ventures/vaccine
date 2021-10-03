@@ -27,6 +27,9 @@ const Header = () => {
                                 <h1>good</h1>
                                 <h1 className="stroke">good</h1>
                             </div>
+                            <div>
+                                <p>Over 2.7 million online pledges signed globally. *</p>
+                            </div>
                         </div>
                     </div>
                     <div className="col-md-8">

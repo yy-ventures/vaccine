@@ -1,12 +1,13 @@
 import React from 'react';
 import "./About.scss"
-import vaccineImg from "../../assets/vaccine.jpg"
+import vaccineImg from "../../assets/vaccine.png"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faChevronRight } from '@fortawesome/free-solid-svg-icons'
 const About = () => {
     return (
         <section className="about-section d-flex justify-content-center align-items-center">
             <div className="corner-blue-circle"></div>
+            <div className="corner-red-circle"></div>
             <div className="about-container">
                 <div className="row h-100">
                     <div className="col-md-5 d-flex justify-content-center align-items-center">

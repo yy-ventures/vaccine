@@ -3,6 +3,7 @@ import About from './Components/About/About';
 import Events from './Components/Events/Events';
 import Header from './Components/Header/Header';
 import Laureate from './Components/Laureate/Laureate';
+import TestimonialSlider from './Components/TestimonialsSlider/TestimonialSlider';
 import "./global.scss"
 function App() {
   
@@ -11,6 +12,7 @@ function App() {
       <Header/>
       <About/>
       <Laureate/>
+      <TestimonialSlider/>
       <Events/>
     </div>
   );

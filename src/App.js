@@ -19,7 +19,7 @@ function App() {
       <Events/>
       <Partners/>
       <JoinTheCause/>
-      <Footer/>
+      {/* <Footer/> */}
     </div>
   );
 }

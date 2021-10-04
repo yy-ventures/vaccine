@@ -1,19 +1,19 @@
 {
     "1":{
         "name": "Dummy Name",
-        "image": "../assets/poeple/mairead.jpg",
+        "image": "https://i.ibb.co/7v0bmnn/yousafzai.png",
         "quote": "...Lorem Ipsum 2 is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
         "designation": "Chief Funny Officer"
     },
     "2":{
         "name": "Mikel Arteta",
-        "image": "../assets/people/leymah.png",
+        "image": "https://i.ibb.co/5BBdbjD/mukwege.jpg",
         "quote": "...Lorem Ipsum 1 is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
         "designation": "Chief Hello Officer"
     },
     "3":{
         "name": "Dummy Name",
-        "image": "../assets/people/yunus.jpg",
+        "image": "https://i.ibb.co/484nFk2/leymah.jpg",
         "quote": "...Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
         "designation": "Chief Bye Bye Officer"
     }

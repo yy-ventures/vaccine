@@ -16,15 +16,12 @@ function App() {
       <Header/>
       <About/>
       <Laureate/>
-<<<<<<< HEAD
       <Activities/>
-=======
       <TestimonialSlider/>
->>>>>>> 53026a5b27709fa008e03d19bd0b2b53338446bd
       <Events/>
       <Partners/>
       <JoinTheCause/>
-      {/* <Footer/> */}
+      <Footer/>
     </div>
   );
 }

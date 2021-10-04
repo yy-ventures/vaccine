@@ -1,0 +1,64 @@
+@import '../../global.scss';
+
+
+.carousel {
+    z-index:1;
+    position: relative;
+    bottom: -10%;
+    .slider-container {
+        display: grid !important;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+.slide_d {
+    display: flex !important;
+    justify-content: space-between;
+    img {
+        object-fit: cover;
+        object-position: center;
+        object-position: 50%;
+    }
+    div p{
+        width: 45ch;
+    }
+}
+
+.testimonials {
+    background-color: #E6F6FF;
+    height: 90vh;
+    position: relative;
+}
+
+#circle {
+    width: 600px;
+    height: 600px;
+    background-color: #E19D53;
+    position: absolute;
+    right: 0%;
+    bottom: 0;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    border-top-left-radius: 100%;
+    border-top-right-radius: 0;
+    z-index: 0;
+}
+
+.slick-dots {
+    position: relative;
+    left: 21%;
+    li {
+        margin-left: 2px !important;
+        margin-right: 2px    !important;
+        button:before {
+            font-size: 16px;
+            color: $white;
+            opacity: 0.5;
+        }
+    }
+    li.slick-active {
+        button:before {
+            color: $white;
+            opacity: 1;
+        }
+    }
+}

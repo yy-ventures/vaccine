@@ -1,0 +1,11 @@
+#headshot_container {
+    margin: 0 auto;
+    margin-right: 8em;
+    img {
+        width: 600px;
+        height: 450px;
+        object-fit: cover;
+        border: 6px solid #D55363;;
+        border-radius: 70px;
+    }
+}

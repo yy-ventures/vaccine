@@ -1,0 +1,23 @@
+@import "../../global.scss";
+
+.partners-section{
+    height: 70vh;
+    background-color: $skyBlue;
+    .partners-section-header{
+        h2{
+            color: $primaryColor;
+            text-transform: uppercase;
+            font-weight: bold;
+            font-size: 3.5vw;
+        }
+    }
+    .partners-section-body{
+        width: 50%;
+        margin: 0 auto;
+        height: 60%;
+        img{
+            width: 100%;
+            height: 17vh;
+        }
+    }
+}

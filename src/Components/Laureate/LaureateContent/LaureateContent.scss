@@ -1,0 +1,32 @@
+@import "../../../global.scss";
+
+.laureate-content-container {
+    p{
+        color: $textColor;
+        font-size: 1.3vw;
+    }
+    h3{
+        text-transform: uppercase;
+        font-size: 2vw;
+        color: $primaryColor;
+        font-weight: bold;
+    }
+    h2{
+        font-size: 3.8vw;
+        font-weight: bold;
+        color: $primaryColor;
+    }
+    .laureate-count{
+        color: $secondaryColor;
+    }
+    h5{
+        color: $textColor;
+
+    }
+    a{
+        text-decoration: none;
+        color: $primaryColor;
+        font-size: 1.2vw;
+        text-transform: capitalize;
+    }
+}

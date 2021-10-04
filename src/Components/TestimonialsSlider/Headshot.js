@@ -1,11 +1,14 @@
 import React from 'react'
 
-import malala from "../../assets/people/carlos.jpg"
 import './Headshot.scss';
-export default function Headshot() {
+
+
+export default function Headshot(props) {
+    console.log(props);
+    
     return (
         <div id="headshot_container">
-         <img src={malala} alt= "malala"/>
+         <img src="../" alt= "{props}"/>
         </div>
     )
 }

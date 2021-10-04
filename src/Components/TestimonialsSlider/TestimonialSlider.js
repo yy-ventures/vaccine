@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 
 import Quote from './Quote'
 import Headshot from './Headshot'
@@ -14,7 +14,7 @@ import './TestimonialSlider.scss';
 
 
 
-export default class TestimonialSLider extends React.Component {
+export default class TestimonialSlider extends React.Component {
 
 
   componentDidMount() {
@@ -23,46 +23,44 @@ export default class TestimonialSLider extends React.Component {
     });
   }
   
-// const items = testimonials.map(({name, image, quote, designation})=>{
-//   return (<>
-//   <Quote prop={quote, name, designation}/>
-//   <Headshot image={image}/>
-//   </>);
-// });
+
 
 // testimonialsList = List(Tes) 
 // console.log(testimonials.map(()=>{
 //   return 1
 // }));
+  objectMap = (obj, fn) =>
+  Object.fromEntries(
+    Object.entries(obj).map(
+      ([k, v], i) => [k, fn(v, k, i)]
+    )
+  )
+  
       render() {
-        const items = [
-    <div className="item" data-value="1">1</div>,
-    <div className="item" data-value="2">2</div>,
-    <div className="item" data-value="3">3</div>,
-    <div className="item" data-value="4">4</div>,
-    <div className="item" data-value="5">5</div>,
-    ];
 
+        const items = this.objectMap(testimonials, ({name, image, quote, designation})=>{
+  return <div className="slider-container">
+  <Quote info = {{name, quote, designation}}/>
+  <Headshot image={image}/>
+  </div>;
+});
     const settings = {
       dots: true,
       infinite: true,
       speed: 500,
       slidesToShow: 1,
-      slidesToScroll: 1
+      slidesToScroll: 1,
+      autoplay:true
     };
 
 
         return <>
         <div className="testimonials">
-          {/* 
-              Array of Components that are the slides
-              and inside them will be a quote and a headshot
-          */}
           <div className="carousel">
           <Slider {...settings}
           ref={slider => (this.slider1 = slider)}
         >
-          {items.map(()=><div className="slider-container"><Quote/><Headshot/></div>)}
+          { Object.values(items)}
         </Slider>
         </div>
           <div id="circle"></div>

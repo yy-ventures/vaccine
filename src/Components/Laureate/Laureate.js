@@ -1,5 +1,6 @@
 import React from 'react';
 import "./Laureate.scss"
+import LaureateContent from './LaureateContent/LaureateContent';
 import LaureatePeople from './LaureatePeople/LaureatePeople';
 
 const Laureate = () => {
@@ -8,11 +9,11 @@ const Laureate = () => {
             <div className="corner-red-circle"></div>
             <div className="laureate-container">
                 <div className="row h-100">
-                    <div className="col-md-6 bg-danger">
+                    <div className="col-md-6">
                         <LaureatePeople/>
                     </div>
-                    <div className="col-md-6 bg-dark">
-                        
+                    <div className="col-md-6">
+                        <LaureateContent/>
                     </div>
                 </div>
             </div>

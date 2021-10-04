@@ -1,0 +1,40 @@
+@import "../../global.scss";
+
+.join-the-cause-section{
+    height: 100vh;
+    background-image: url("../../assets/yunus-speech.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    .join-the-cause-content{
+        position: absolute;
+        text-align: center;
+        top: 10vw;
+        right: 5.2vw;
+        h2{
+            font-size: 3.5vw;
+            text-transform: uppercase;
+            color: $white;
+            font-weight: bold;
+        }
+        p{
+            color: $white;
+            font-size: 1.6vw;
+        }
+    }
+    .join-the-cause-btn{
+        margin-right: 5rem;
+        button{
+            outline: none;
+            border: none;
+            padding: 12px 36px;
+            background: $secondaryColor;
+            color: $white;
+            font-size: 1.4vw;
+            text-transform: uppercase;
+            font-weight: bold;
+            border-radius: 16px;
+        }
+    }
+}

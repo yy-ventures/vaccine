@@ -1,7 +1,50 @@
 @import "../../../global.scss";
 
 .footer-section{
-    height: 40vh;
+    overflow: hidden;
+    height: 30vh;
     background: $primaryColor;
     border-top: 10px solid $optionalColor;
+    position: relative;
+    .footer-logo{
+        position: absolute;
+        left: 5vw;
+        bottom: -3.5vw;
+        img{
+            height: 30vh;
+        }
+    }
+    .footer-content-social{
+        a{
+            display: inline-flex;
+            width: 2.6vw;
+            height: 2.6vw;
+            background: $white;
+            color: $primaryColor;
+            align-items: center;
+            justify-content: center;
+            margin: 0 0.4vw;
+            font-size: 1.2vw;
+            border-radius: 50%;
+            text-decoration: none;
+        }
+    }
+    .footer-content-menu{
+        
+        a{
+            text-decoration: none;
+            color: $white;
+            padding: 0 1rem;
+            border-right: 2px solid $white;
+            height: fit-content;
+            &:last-child{
+                border-right: none;
+            }
+        }
+    }
+    .footer-content-bottom{
+        p{
+            color: $white;
+        }
+    }
 }

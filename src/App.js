@@ -1,5 +1,6 @@
 import './App.css';
 import About from './Components/About/About';
+import Activities from './Components/Activities/Activities';
 import Events from './Components/Events/Events';
 import Header from './Components/Header/Header';
 import JoinTheCause from './Components/JoinTheCause/JoinTheCause';
@@ -14,6 +15,7 @@ function App() {
       <Header/>
       <About/>
       <Laureate/>
+      <Activities/>
       <Events/>
       <Partners/>
       <JoinTheCause/>

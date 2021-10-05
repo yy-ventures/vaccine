@@ -8,6 +8,7 @@ import {
 import HomeRoute from './Components/Routes/HomeRoute/HomeRoute';
 import PartnersRoute from './Components/Routes/PartnersRoute/PartnersRoute';
 import Footer from './Components/Shared/Footer/Footer';
+import FormRoute from './Components/Routes/FormRoute/FormRoute';
 
 function App() {
   
@@ -17,6 +18,9 @@ function App() {
         <Switch>
           <Route path="/partners">
             <PartnersRoute/>
+          </Route>
+          <Route path="/pledge">
+            <FormRoute/>
           </Route>
           <Route path="/">
             <HomeRoute/>

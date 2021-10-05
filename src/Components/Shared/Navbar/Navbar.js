@@ -14,7 +14,7 @@ const Navbar = () => {
                     <a href="/">Signatories</a>
                     <a href="/">Events</a>
                     <Link to="/partners">Partners</Link>
-                    <a href="/" className="join-btn">Join</a>
+                    <Link to="/pledge" className="join-btn">Join</Link>
                 </div>
             </div>
         </section>

@@ -6,7 +6,6 @@ import Header from '../../Header/Header';
 import JoinTheCause from '../../JoinTheCause/JoinTheCause';
 import Laureate from '../../Laureate/Laureate';
 import Partners from '../../Partners/Partners';
-import Footer from '../../Shared/Footer/Footer';
 import TestimonialSlider from '../../TestimonialsSlider/TestimonialSlider';
 
 const HomeRoute = () => {

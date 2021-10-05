@@ -1,0 +1,27 @@
+@import "../../../global.scss";
+
+.join-the-cause-router-section{
+    height: 40vh;
+    background-color: $skyBlue;
+    h2{
+        color: $primaryColor;
+        font-size: 3.5vw;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+    p{
+        font-size: 1.4vw;
+        color: $textColor;
+    }
+    button{
+        padding: 14px 34px;
+        outline: none;
+        border: none;
+        background-color: $secondaryColor;
+        font-weight: bold;
+        color: $white;
+        border-radius: 15px;
+        font-size: 1.2rem;
+        text-transform: uppercase;
+    }
+}

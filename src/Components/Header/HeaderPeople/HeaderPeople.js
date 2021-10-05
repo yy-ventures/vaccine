@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react';
 import "./HeaderPeople.scss";
 import malala from "../../../assets/people/yousafzai.png"
 import mairead from "../../../assets/people/mairead.jpg"
-import desmond from "../../../assets/people/desmond.jpg"
 import { useRef } from 'react/cjs/react.development';
 import firstFivePeople from "../../../assets/Data/PeopleData/FirstFivePeopleData.json"
 import secondFivePeople from "../../../assets/Data/PeopleData/SecondFivePeopleData.json"
@@ -47,11 +46,11 @@ const HeaderPeople = () => {
     }, [secondIndex])
 
     // motion
-    const variantsOne = {hidden: {opacity: 0, y: -60}, visible: {opacity: 1, y: 0}}
-    const variantsTwo = {hidden: {opacity: 0, y: 60}, visible: {opacity: 1, y: 0}}
-    const variantsThree = {hidden: {opacity: 0, x: -60}, visible: {opacity: 1, x: 0}}
+    const variantsOne = {hidden: {opacity: 0, y: -80}, visible: {opacity: 1, y: 0}}
+    const variantsTwo = {hidden: {opacity: 0, y: 80}, visible: {opacity: 1, y: 0}}
+    const variantsThree = {hidden: {opacity: 0, x: -80}, visible: {opacity: 1, x: 0}}
     const variantsFour = {hidden: {opacity: 0}, visible: {opacity: 1}}
-    const variantsFive = {hidden: {opacity: 0, y: -50}, visible: {opacity: 1, y: 0}}
+    const variantsFive = {hidden: {opacity: 0, y: -90}, visible: {opacity: 1, y: 0}}
     const variantsSix = {hidden: {opacity: 0, x: 100}, visible: {opacity: 1, x: 0}}
 
     return (

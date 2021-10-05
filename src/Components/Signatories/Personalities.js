@@ -9,6 +9,7 @@ import "./Personalities.scss";
 import leymah from "../../assets/people/leymah.jpg";
 import image1 from "../../assets/people/desmond.jpg";
 import image2 from "../../assets/people/carlos.jpg";
+import Navbar from "../Shared/Navbar/Navbar";
 
 
 export const Personalities = () => {  
@@ -18,35 +19,6 @@ export const Personalities = () => {
   const [postsPerPage] = useState(15);
 
     const personalitiesArray = [];
-
-    // const createPersonalities = (person_list) => {
-    // for (let i = 0; i < person_list.length - 2; i += 3) {
-    //   personalitiesArray.push(
-    //     <>
-    //       <PeopleDescription
-    //         known_for={person_list[i].known_for}
-    //         full_name={person_list[i].full_name}
-    //         key={person_list[i].id}
-    //         image={leymah}
-    //       />
-    //       <PeopleDescription
-    //         known_for={person_list[i + 1].known_for}
-    //         full_name={person_list[i + 1].full_name}
-    //         key={person_list[i + 1].id}
-    //         image={image1}
-    //       />
-    //       <PeopleDescription
-    //         known_for={person_list[i + 2].known_for}
-    //         full_name={person_list[i + 2].full_name}
-    //         key={person_list[i + 2].id}
-    //         image={image2}
-    //       />
-    //     </>
-    //   );
-    // }
-//     return personalitiesArray;
-//   };
-   // Get current posts
    const indexOfLastPost = currentPage * postsPerPage;
    const indexOfFirstPost = indexOfLastPost - postsPerPage;
    const currentPosts = posts.slice(indexOfFirstPost, indexOfLastPost);
@@ -55,6 +27,7 @@ export const Personalities = () => {
    const paginate = pageNumber => setCurrentPage(pageNumber);
    return (
     <section className="personalities">
+        <Navbar/>
         <div className="personalities-header">
       <div className="col-md-4 header-feature-text d-flex align-items-center">
       <div className="position-relative">

@@ -1,0 +1,29 @@
+@import '../../../global.scss';
+
+section.slider-section{
+    height: 100vh;
+    .logo-slider {
+        height: 30vh;
+        width: 80%;
+        margin: 0 auto;
+        margin-top: 5em;
+        border-top: 2px solid $secondaryColor;
+        border-bottom: 4px solid $primaryColor;
+
+        .logo-div{
+            margin-top: 10%;
+            outline: none;
+            img{
+                height: 15vh;
+            }
+        }
+        .slick-prev:before {
+            color: $primaryColor;
+        }
+        .slick-next:before {
+            color: $primaryColor;
+        }
+    }
+}
+
+

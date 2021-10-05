@@ -1,5 +1,19 @@
 @import "../../global.scss";
 .section-activities{
     background: $skyBlue;
-    height: 40vh;
+    min-height: 40vh;
+    .activity-container{
+        height: 80%;
+        width: 80%;
+        margin: 0 auto;
+        img{
+            height: 13vh;
+        }
+        p{
+            margin-top: 1.5rem;
+            color: $textColor;
+            font-weight: bold;
+            font-size: 1.3vw;
+        }
+    }
 }

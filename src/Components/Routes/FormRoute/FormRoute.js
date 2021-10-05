@@ -3,6 +3,7 @@ import Navbar from '../../Shared/Navbar/Navbar';
 import "./FormRoute.scss";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faStarOfLife } from '@fortawesome/free-solid-svg-icons'
+import CountrySelect from '../../Pledge/CountrySelect';
 
 const FormRoute = () => {
     return (
@@ -41,11 +42,48 @@ const FormRoute = () => {
                                     <div className="col-md-5">
                                         <label>Country <FontAwesomeIcon icon={faStarOfLife} /></label>
                                         <select className="form-select">
-                                            <option selected>Open this select menu</option>
-                                            <option value="1">One</option>
-                                            <option value="2">Two</option>
-                                            <option value="3">Three</option>
+                                            <CountrySelect/>
                                         </select>
+                                    </div>
+                                </div>
+                                <div className="row mt-5">
+                                    <h5>Other Information(Optional)</h5>
+                                </div>
+                                <div className="row mt-5">
+                                    <div className="col-md-5">
+                                        <label>Organization: <FontAwesomeIcon icon={faStarOfLife} /></label>
+                                        <input type="" name="" placeholder="" required />
+                                    </div>
+                                    <div className="col-md-5">
+                                        <label>Destination: <FontAwesomeIcon icon={faStarOfLife} /></label>
+                                        <input type="" name="" placeholder="" required />
+                                    </div>
+                                </div>
+                                <div className="row mt-5">
+                                    <div className="col-md-5">
+                                        <label>Age: <FontAwesomeIcon icon={faStarOfLife} /></label>
+                                        <input type="" name="" placeholder="" required />
+                                    </div>
+                                    <div className="col-md-5">
+                                        <label>Gender: <FontAwesomeIcon icon={faStarOfLife} /></label>
+                                        <input type="" name="" placeholder="" required />
+                                    </div>
+                                </div>
+                                <div className="row mt-5">
+                                    <div className="col-md-5">
+                                        <label>Profile Picture <FontAwesomeIcon icon={faStarOfLife} /></label>
+                                        <input type="file" name="" placeholder="" required />
+                                    </div>
+                                </div>
+                                <div className="row mt-5">
+                                    <div className="col-md-5">
+                                        <label>Permission To Use Your Pledge <FontAwesomeIcon icon={faStarOfLife} /></label>
+                                        <input type="checkbox" name="" placeholder="" required />
+                                    </div>
+                                </div>
+                                <div className="row mt-5">
+                                    <div className="col-md-5">
+                                        <button class="btn btn-info">I Pledge</button>
                                     </div>
                                 </div>
                             </div>

@@ -11,7 +11,7 @@ import PartnersRoute from './Components/Routes/PartnersRoute/PartnersRoute';
 import Footer from './Components/Shared/Footer/Footer';
 import Partners from './Components/Partners/Partners';
 import FormRoute from './Components/Routes/FormRoute/FormRoute';
-
+import Pledge from './Components/Pledge/Pledge';
 function App() {
   
   return (
@@ -21,6 +21,9 @@ function App() {
         {/* <Route path="/joinus">
             </>
           </Route> */}
+        <Route path="/pledgers">
+          <Pledge/>
+          </Route>
         <Route path="/signatories">
             <Personalities/>
           </Route>

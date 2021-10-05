@@ -1,6 +1,7 @@
 import React from 'react';
 import "./Navbar.scss"
-import vaccineLogo from "../../assets/vaccine-logo.svg"
+import vaccineLogo from "../../../assets/vaccine-logo.svg"
+import { Link } from 'react-router-dom';
 const Navbar = () => {
     return (
         <section className="navbar">
@@ -9,10 +10,10 @@ const Navbar = () => {
                     <img src={vaccineLogo} alt="vaccine-logo" />
                 </div>
                 <div className="navbar-menu">  
-                    <a href="/" className="active">Home</a>
+                    <Link to="/" className="active">Home</Link>
                     <a href="/">Signatories</a>
                     <a href="/">Events</a>
-                    <a href="/">Partners</a>
+                    <Link to="/partners">Partners</Link>
                     <a href="/" className="join-btn">Join</a>
                 </div>
             </div>

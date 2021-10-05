@@ -1,6 +1,6 @@
 import React, { useRef } from 'react';
 import "./Navigation.scss";
-import vaccineLogo from "../../assets/vaccine-logo.svg"
+import vaccineLogo from "../../../assets/vaccine-logo.svg"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons'
 

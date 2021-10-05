@@ -1,14 +1,12 @@
 import React from 'react';
-import Navbar from '../Navbar/Navbar';
-import Navigation from '../Navigation/Navigation';
+import Navbar from '../Shared/Navbar/Navbar';
 import "./Header.scss"
 import HeaderPeople from './HeaderPeople/HeaderPeople';
 
 const Header = () => {
-    const widthResponse = document.body.scrollWidth;
     return (
         <header>
-            {widthResponse > 900 ? <Navbar/> : <Navigation/>}
+            <Navbar/>
             <div className="header-container">
                 <div className="row h-100">
                     <div className="col-md-4 header-feature-text d-flex align-items-center">

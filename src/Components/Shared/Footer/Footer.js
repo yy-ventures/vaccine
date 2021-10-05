@@ -27,7 +27,7 @@ const Footer = () => {
                     <a href="/">Join</a>
                 </div>
                 <div className="footer-content-bottom mt-5">
-                    <p><FontAwesomeIcon icon={faCopyright} /> 2020 Yunus Centre. All Rights Reserved</p>
+                    <p><FontAwesomeIcon icon={faCopyright} /> 2020 Yunus Centre. All Rights Reserved.</p>
                 </div>
             </div>
         </footer>

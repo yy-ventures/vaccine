@@ -9,18 +9,20 @@ import TestimonialSlider from './Components/TestimonialsSlider/TestimonialSlider
 import Partners from './Components/Partners/Partners';
 import Footer from './Components/Shared/Footer/Footer';
 import "./global.scss"
+import { Personalities } from './Components/Signatories/Personalities';
 function App() {
   
   return (
     <div className="App">
-      <Header/>
-      <About/>
+      {/* <Header/> */}
+      {/* <About/>
       <Laureate/>
       <Activities/>
       <TestimonialSlider/>
       <Events/>
       <Partners/>
-      <JoinTheCause/>
+      <JoinTheCause/> */}
+      <Personalities/>
       <Footer/>
     </div>
   );

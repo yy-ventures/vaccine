@@ -14,7 +14,7 @@ const LaureateContent = () => {
                 </div>
                 <div className="mt-4">
                     <h2 className="laureate-count">25</h2>
-                    <h5>Noble Laureates</h5>
+                    <h5>Nobel Laureates</h5>
                 </div>
                 <div className="mt-4">
                     <h2>33 <FontAwesomeIcon icon={faPlus} /></h2>

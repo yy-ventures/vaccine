@@ -10,6 +10,7 @@ import HomeRoute from './Components/Routes/HomeRoute/HomeRoute';
 import PartnersRoute from './Components/Routes/PartnersRoute/PartnersRoute';
 import Footer from './Components/Shared/Footer/Footer';
 import Partners from './Components/Partners/Partners';
+import FormRoute from './Components/Routes/FormRoute/FormRoute';
 
 function App() {
   
@@ -17,14 +18,17 @@ function App() {
     <div className="App">
       <Router>
         <Switch>
-        <Route path="/joinus">
+        {/* <Route path="/joinus">
             </>
-          </Route>
+          </Route> */}
         <Route path="/signatories">
             <Personalities/>
           </Route>
           <Route path="/partners">
             <PartnersRoute/>
+          </Route>
+          <Route path="/pledge">
+            <FormRoute/>
           </Route>
           <Route path="/">
             <HomeRoute/>

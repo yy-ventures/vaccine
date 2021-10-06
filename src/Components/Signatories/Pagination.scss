@@ -1,3 +1,24 @@
-ul.pagination{
-    margin-top: 5em;
+@import "../../global.scss";
+
+.pagination{
+    li{
+        a{
+            border: 0;
+            background-color: $primaryColor;
+            display: inline-flex;
+            width: 35px;
+            height: 35px;
+            align-items: center;
+            justify-content: center;
+            color: $white;
+            font-weight: bold;
+            margin: 0 0.5rem;
+            border-radius: 5px;
+            font-size: 1.2rem;
+            &:focus{
+                box-shadow: none;
+                color: $primaryColor;
+            }
+        }
+    }
 }

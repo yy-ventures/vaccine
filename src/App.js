@@ -9,6 +9,7 @@ import HomeRoute from './Components/Routes/HomeRoute/HomeRoute';
 import PartnersRoute from './Components/Routes/PartnersRoute/PartnersRoute';
 import Footer from './Components/Shared/Footer/Footer';
 import FormRoute from './Components/Routes/FormRoute/FormRoute';
+import PledgeRoute from './Components/Routes/PledgeRoute/PledgeRoute';
 
 function App() {
   
@@ -21,6 +22,9 @@ function App() {
           </Route>
           <Route path="/pledge">
             <FormRoute/>
+          </Route>
+          <Route path="/people-pledge">
+            <PledgeRoute/>
           </Route>
           <Route path="/">
             <HomeRoute/>

@@ -5,7 +5,9 @@
         width: 80%;
         margin: 0 auto;
         .main-form{
-            height: 100vh;
+            min-height: 100vh;
+            height: auto;
+            padding: 2rem 0;
             .main-form-header-section{
                 height: 20%;
                 .main-form-header{
@@ -36,7 +38,7 @@
                     h5{
                         color: $textColor;
                         font-weight: 400;
-                        font-size: 1.2vw;
+                        font-size: 1vw;
                     }
                     .fa-star-of-life{
                         font-size: 0.5vw;
@@ -46,17 +48,73 @@
                         display: block;
                         font-weight: bold;
                         color: $textColor;
+                        font-size: 1.3vw;
                     }
                     input, select {
                         width: 100%;
                         padding: 10px 20px;
-                        border: 2px solid $border;
+                        border: 1px solid $border;
                         border-radius: 10px;
                         margin-top: 1rem;
                         color: $textColor;
                         outline: none;
                         &:focus{
                             box-shadow: none;
+                        }
+                    }
+                    .form-file-upload{
+                        h4{
+                            display: block;
+                            font-weight: bold;
+                            color: $textColor;
+                            font-size: 1.3vw;
+                        }
+                        p{
+                            font-weight: 400;
+                            color: #666;
+                            margin-top: 2rem;
+                        }
+                        input{
+                            width: 40%;
+                            margin-top: 2rem;
+                            &::-webkit-file-upload-button{
+                                background-color: red;
+                            }
+                        }
+                    }
+                    .form-check-upload{
+                        h4{
+                            display: block;
+                            font-weight: bold;
+                            color: $textColor;
+                            font-size: 1.3vw;
+                        }
+                        p{
+                            font-weight: 400;
+                            color: #666;
+                            margin-top: 2rem;
+                        }input{
+                            padding: 0 0;
+                            width: 24px;
+                            height: 24px;
+                            border-radius: 8px;
+                            margin-top: 0;
+                            &:checked{
+                                background-color: $primaryColor;
+                            }
+                        }
+                    }
+                    .submit-area{
+                        button{
+                            outline: none;
+                            border: none;
+                            padding: 10px 56px;
+                            font-size: 1.2vw;
+                            text-transform: uppercase;
+                            background-color: #B2B2B2;
+                            color: $textColor;
+                            font-weight: bold;
+                            border-radius: 15px;
                         }
                     }
                 }

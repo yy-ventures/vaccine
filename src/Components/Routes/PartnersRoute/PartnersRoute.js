@@ -1,6 +1,7 @@
 import React from 'react';
 import Navbar from '../../Shared/Navbar/Navbar';
 import "./PartnersRoute.scss";
+import LogoSlider from './LogoSlider';
 import peopleVaccine from "../../../assets/partners/vaccine-people.svg";
 import avaaz from "../../../assets/partners/avaaz.svg";
 import JoinTheCauseRouter from '../JoinTheCauseRouter/JoinTheCauseRouter';
@@ -37,6 +38,7 @@ const PartnersRoute = () => {
                     </div>
                 </div>
             </div>
+            <LogoSlider/>
             <JoinTheCauseRouter/>
         </section>
     );

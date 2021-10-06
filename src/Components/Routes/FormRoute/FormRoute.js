@@ -297,6 +297,9 @@ const FormRoute = () => {
                                 {/* form second portion */}
                                 <h5 className="mt-5"><FontAwesomeIcon icon={faStarOfLife} /> Other Information(Optional)</h5>
                                 <div className="row mt-5">
+                                    <h5>Other Information(Optional)</h5>
+                                </div>
+                                <div className="row mt-5">
                                     <div className="col-md-5">
                                         <label>Organization: <FontAwesomeIcon icon={faStarOfLife} /></label>
                                         <input type="" name="" placeholder="" required />

@@ -1,5 +1,6 @@
 import './App.css';
 import "./global.scss"
+import  { Personalities } from './Components/Signatories/Personalities';
 import {
   BrowserRouter as Router,
   Switch,
@@ -12,25 +13,27 @@ import FormRoute from './Components/Routes/FormRoute/FormRoute';
 import PledgeRoute from './Components/Routes/PledgeRoute/PledgeRoute';
 
 function App() {
-  
   return (
     <div className="App">
       <Router>
         <Switch>
+          <Route path="/signatories">
+            <Personalities />
+          </Route>
           <Route path="/partners">
-            <PartnersRoute/>
+            <PartnersRoute />
           </Route>
           <Route path="/pledge">
-            <FormRoute/>
+            <FormRoute />
           </Route>
           <Route path="/people-pledge">
-            <PledgeRoute/>
+            <PledgeRoute />
           </Route>
           <Route path="/">
-            <HomeRoute/>
+            <HomeRoute />
           </Route>
         </Switch>
-        <Footer/>
+        <Footer />
       </Router>
     </div>
   );

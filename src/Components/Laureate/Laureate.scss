@@ -23,3 +23,14 @@
         border-top-right-radius: 0;
     }
 }
+
+@media screen and (max-width: 900px){
+    .section-laureate{
+        height: 900px;
+        padding: 2rem 0;
+        .laureate-container{
+            height: 100%;
+            width: 90%;
+        }
+    }
+}

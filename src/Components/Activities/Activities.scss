@@ -1,7 +1,7 @@
 @import "../../global.scss";
 .section-activities{
     background: $skyBlue;
-    min-height: 40vh;
+    height: 350px;
     .activity-container{
         height: 80%;
         width: 80%;
@@ -14,6 +14,19 @@
             color: $textColor;
             font-weight: bold;
             font-size: 1.3vw;
+        }
+    }
+}
+
+@media screen and (max-width: 900px){
+    .section-activities{
+        height: auto;
+        padding: 4rem 0;
+        background-color: antiquewhite;
+        .activity-container{
+            p{
+                font-size: 1.1rem;
+            }
         }
     }
 }

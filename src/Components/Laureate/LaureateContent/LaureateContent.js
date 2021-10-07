@@ -1,11 +1,16 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import "./LaureateContent.scss";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPlus, faChevronRight } from '@fortawesome/free-solid-svg-icons'
+import Aos from "aos"
+import "aos/dist/aos.css"
 
 const LaureateContent = () => {
+    useEffect(()=> {
+        Aos.init({duration: 2000})
+    }, [])
     return (
-        <div className="laureate-content-container p-3 h-100 d-flex align-items-center">
+        <div className="laureate-content-container p-3 h-100 d-flex align-items-center" data-aos="fade-left">
             <div className="d-flex flex-column">
                 <div className="mt-4">
                     <p>List of</p>

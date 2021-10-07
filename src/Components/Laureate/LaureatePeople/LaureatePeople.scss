@@ -13,3 +13,16 @@
         }
     }
 }
+
+@media screen and (max-width: 900px){
+    .laureate-people-container{
+        padding: 0;
+        .people-image{
+            height: 70px;
+            width: 100px;
+            img{
+                border-radius: 12px;
+            }
+        }
+    }
+}

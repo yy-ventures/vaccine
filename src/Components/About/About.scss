@@ -66,3 +66,34 @@
         border-top-right-radius: 100%;
     }
 }
+
+@media screen and (max-width: 900px){
+    .about-section{
+        background-color: antiquewhite;
+        padding: 2rem 0;
+        height: 800px;
+        .about-container{
+            width: 85%;
+            height: 100%;
+            .about-data-container{
+                .declare-header{
+                    font-size: 1.5rem;
+                }
+                .global-common-header{
+                    font-size: 1.5rem;
+                }
+                p{
+                    font-size: 1rem;
+                    color: $textColor;
+                    width: 100%;
+                }
+            }
+        }
+    }
+    .corner-blue-circle{
+        display: none;
+    }
+    .corner-red-circle{
+        display: none;
+    }
+}

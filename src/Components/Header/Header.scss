@@ -60,12 +60,27 @@ header{
 
 @media screen and (max-width: 900px) {
     header{
+        height: auto;
+        padding: 2rem 0;
         .header-container{
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
+            .header-feature-text{
+                margin-top: 5rem;
+                h1{
+                    font-size: 3rem;
+                }
+                .stroke{
+                    display: none;
+                }
+                h3{
+                    font-size: 1.5rem;
+                }
+                h4{
+                    font-size: 1.5rem;
+                }
+            }
+        }
+        .corner-blue-circle{
+            display: none;
         }
     }
 }

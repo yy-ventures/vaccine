@@ -116,3 +116,16 @@
         }
     }
 }
+
+@media screen and (max-width: 900px){
+    .people-container{
+        height: auto;
+        .left-side-people{
+            display: none;
+            
+        }
+        .right-side-people{
+            display: none;
+        }
+    }
+}

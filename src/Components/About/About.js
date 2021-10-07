@@ -1,21 +1,27 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import "./About.scss"
 import vaccineImg from "../../assets/vaccine.png"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faChevronRight } from '@fortawesome/free-solid-svg-icons'
+import Aos from "aos"
+import "aos/dist/aos.css"
+
 const About = () => {
+    useEffect(()=> {
+        Aos.init({duration: 2000})
+    }, [])
     return (
         <section className="about-section d-flex justify-content-center align-items-center">
             <div className="corner-blue-circle"></div>
             <div className="corner-red-circle"></div>
             <div className="about-container">
                 <div className="row h-100">
-                    <div className="col-md-5 d-flex justify-content-center align-items-center">
+                    <div className="col-md-5 d-flex justify-content-center align-items-center" data-aos="fade-up">
                         <div className="about-img-container">
                             <img src={vaccineImg} alt="vaccine-img" />
                         </div>
                     </div>
-                    <div className="col-md-7 d-flex justify-content-center align-items-center">
+                    <div className="col-md-7 d-flex justify-content-center align-items-center" data-aos="fade-left">
                         <div className="about-data-container">
                             <div>
                                 <h2 className="declare-header">Declare COVID-19 Vaccines</h2>

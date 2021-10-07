@@ -1,3 +1,5 @@
+@import "../../../global.scss";
+
 .navbar{
     height: 20vh;
     background-color: inherit;
@@ -40,6 +42,55 @@
                 border: 1px solid #D55363;
                 color: #fff;
             }
+        }
+        .cross-icon{
+            display: none;
+        }
+    }
+    .menu-icon{
+        display: none;
+    }
+}
+
+@media (max-width: $breakpointTablet){
+    .navbar{
+        background-color: $primaryColor;
+        height: 100%;
+        width: 100%;
+        transform: translateX(-100%);
+        position: absolute;
+        z-index: 500;
+        transition: 0.3s;
+        .navbar-container{
+            flex-direction: column;
+            .navbar-logo{
+                img{
+                    height: 60px;
+                }
+            }
+            .navbar-menu{
+                a{
+                    display: block;
+                    text-align: center;
+                    margin-top: 1rem;
+                }
+            }
+            .cross-icon{
+                position: absolute;
+                top: 10%;
+                left: 10%;
+                color: $white;
+                font-size: 30px;
+                display: block;
+            }
+        }
+        .menu-icon{
+            position: absolute;
+            right: -15%;
+            top: 5%;
+            font-size: 30px;
+            display: block;
+            color: $primaryColor;
         }
     }
 }

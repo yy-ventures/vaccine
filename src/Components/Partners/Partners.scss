@@ -21,3 +21,19 @@
         }
     }
 }
+
+@media screen and (max-width: 900px){
+    .partners-section{
+        height: 100%;
+        padding: 2rem 0;
+        .partners-section-header{
+            h2{
+                font-size: 2rem;
+            }
+        }
+        .partners-section-body{
+            width: 100%;
+            flex-direction: column;
+        }
+    }
+}

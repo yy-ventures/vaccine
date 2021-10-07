@@ -1,9 +1,14 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import "./Events.scss";
 import avaaz from "../../assets/avaaz.svg";
 import newVaccine from "../../assets/new-vaccine.svg";
+import Aos from "aos"
+import "aos/dist/aos.css"
 
 const Events = () => {
+    useEffect(()=> {
+        Aos.init({duration: 2000})
+    }, [])
     return (
         <section className="events-section d-flex justify-content-center align-items-center">
             <div className="corner-yellow-circle"></div>
@@ -15,7 +20,7 @@ const Events = () => {
                     </div>
                     <div className="events-body">
                         <div className="row">
-                            <div className="col-md-6">
+                            <div className="col-md-6" data-aos="fade-right">
                                 <div className="card-data">
                                     <div className="avaaz-card-img">
                                         <img src={avaaz} alt="avaaz" />
@@ -25,7 +30,7 @@ const Events = () => {
                                     </div>
                                 </div>
                             </div>
-                            <div className="col-md-6">
+                            <div className="col-md-6" data-aos="fade-left">
                                 <div className="card-data">
                                     <div className="vaccine-card-img">
                                         <img src={newVaccine} alt="new-vaccine" />

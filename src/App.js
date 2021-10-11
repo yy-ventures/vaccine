@@ -11,6 +11,7 @@ import PartnersRoute from './Components/Routes/PartnersRoute/PartnersRoute';
 import Footer from './Components/Shared/Footer/Footer';
 import FormRoute from './Components/Routes/FormRoute/FormRoute';
 import PledgeRoute from './Components/Routes/PledgeRoute/PledgeRoute';
+import EventRoute from './Components/Routes/EventRoute/EventRoute';
 
 function App() {
   return (
@@ -28,6 +29,9 @@ function App() {
           </Route>
           <Route path="/people-pledge">
             <PledgeRoute />
+          </Route>
+          <Route path="/events">
+            <EventRoute/>
           </Route>
           <Route path="/">
             <HomeRoute />

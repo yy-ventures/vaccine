@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import "./JoinTheCause.scss";
 import Aos from "aos"
 import "aos/dist/aos.css"
+import { Link } from 'react-router-dom';
 
 const JoinTheCause = () => {
     useEffect(()=> {
@@ -14,7 +15,7 @@ const JoinTheCause = () => {
                 <p>Help us achieve our goal to <br/> secure a better future for all</p>
             </div>
             <div className="join-the-cause-btn" data-aos="fade-up">
-                <button>pledge now</button>
+                <Link to="/pledge"><button>pledge now</button></Link>
             </div>
         </section>
     );

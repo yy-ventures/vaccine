@@ -280,7 +280,7 @@ const PledgeRoute = () => {
                                         <img src={pledgePeople.image} alt={pledgePeople.name} />
                                     </div>
                                 </div>
-                                <div className="col-md-9 mt-4">
+                                <div className="col-md-9 mt-4 ps-4">
                                     <div>
                                         <h5>{pledgePeople.name}</h5>
                                         <p>{pledgePeople.company}, {pledgePeople.country}</p>

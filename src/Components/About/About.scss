@@ -12,12 +12,24 @@
             width: 80%;
             border-radius: 25px;
             box-shadow: 10px 10px 5px 0 rgba(0,0,0,0.1);
+            &::after{
+                content: "";
+                position: absolute;
+                width: 15rem;
+                height: 15rem;
+                border-radius: 50%;
+                background-color: $skyBlue;
+                top: -5%;
+                right: -5%;
+                z-index: -1;
+            }
             img{
                 width: 100%;
                 height: 100%;
                 object-fit: cover;
                 border: 5px solid $optionalColor;
                 border-radius: 25px;
+                z-index: 500;
             }
         }
         .about-data-container{

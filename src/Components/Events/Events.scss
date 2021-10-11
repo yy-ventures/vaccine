@@ -21,6 +21,9 @@
         }
         .events-body{
             height: 100%;
+            a{
+                text-decoration: none;
+            }
             .card-data{
                 .avaaz-card-img{
                     border-top-left-radius: 2rem;

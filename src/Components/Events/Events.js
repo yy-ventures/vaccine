@@ -4,6 +4,7 @@ import avaaz from "../../assets/avaaz.svg";
 import newVaccine from "../../assets/new-vaccine.svg";
 import Aos from "aos"
 import "aos/dist/aos.css"
+import { Link } from 'react-router-dom';
 
 const Events = () => {
     useEffect(()=> {
@@ -21,24 +22,28 @@ const Events = () => {
                     <div className="events-body">
                         <div className="row">
                             <div className="col-md-6" data-aos="fade-right">
-                                <div className="card-data">
-                                    <div className="avaaz-card-img">
-                                        <img src={avaaz} alt="avaaz" />
+                                <a href="https://secure.avaaz.org/page/en/">
+                                    <div className="card-data">
+                                        <div className="avaaz-card-img">
+                                            <img src={avaaz} alt="avaaz" />
+                                        </div>
+                                        <div className="avaaz-card-footer py-4 d-flex justify-content-center align-items-center">
+                                            <h3>past events</h3>
+                                        </div>
                                     </div>
-                                    <div className="avaaz-card-footer py-4 d-flex justify-content-center align-items-center">
-                                        <h3>past events</h3>
-                                    </div>
-                                </div>
+                                </a>
                             </div>
                             <div className="col-md-6" data-aos="fade-left">
-                                <div className="card-data">
-                                    <div className="vaccine-card-img">
-                                        <img src={newVaccine} alt="new-vaccine" />
+                                <a href="https://peoplesvaccine.org/">
+                                    <div className="card-data">
+                                        <div className="vaccine-card-img">
+                                            <img src={newVaccine} alt="new-vaccine" />
+                                        </div>
+                                        <div className="vaccine-card-footer py-4 d-flex justify-content-center align-items-center">
+                                            <h3>upcoming events</h3>
+                                        </div>
                                     </div>
-                                    <div className="vaccine-card-footer py-4 d-flex justify-content-center align-items-center">
-                                        <h3>upcoming events</h3>
-                                    </div>
-                                </div>
+                                </a>
                             </div>
                         </div>
                     </div>

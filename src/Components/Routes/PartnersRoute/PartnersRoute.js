@@ -7,6 +7,7 @@ import avaaz from "../../../assets/partners/avaaz.svg";
 import JoinTheCauseRouter from '../JoinTheCauseRouter/JoinTheCauseRouter';
 
 const PartnersRoute = () => {
+    document.title = "Partners | Vaccine Common Goods"
     return (
         <section className="partners-route-section">
             <Navbar/>

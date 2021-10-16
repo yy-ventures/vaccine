@@ -8,6 +8,7 @@ import Navbar from "../Shared/Navbar/Navbar";
 import JoinTheCauseRouter from "../Routes/JoinTheCauseRouter/JoinTheCauseRouter"
 
 export const Personalities = () => {
+  document.title = "Signatories | Vaccine Common Goods"
   const [posts, setPosts] = useState(personalities);
   //const [loading, setLoading] = useState(false);
   const [currentPage, setCurrentPage] = useState(1);
@@ -17,7 +18,6 @@ export const Personalities = () => {
   const indexOfLastPost = currentPage * postsPerPage;
   const indexOfFirstPost = indexOfLastPost - postsPerPage;
   const currentPosts = posts.slice(indexOfFirstPost, indexOfLastPost);
-  console.log(posts);
   // Change page
   const paginate = pageNumber => setCurrentPage(pageNumber);
   return (

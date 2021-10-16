@@ -6,6 +6,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faStarOfLife } from '@fortawesome/free-solid-svg-icons'
 
 const FormRoute = () => {
+    document.title = "Join | Vaccine Common Goods"
     return (
         <section className="form-route-section">
             <Navbar/>
@@ -295,9 +296,8 @@ const FormRoute = () => {
                                     </div>
                                 </div>
                                 {/* form second portion */}
-                                <h5 className="mt-5"><FontAwesomeIcon icon={faStarOfLife} /> Other Information(Optional)</h5>
                                 <div className="row mt-5">
-                                    <h5>Other Information(Optional)</h5>
+                                    <h5 className="mt-5"><FontAwesomeIcon icon={faStarOfLife} /> Other Information(Optional)</h5>
                                 </div>
                                 <div className="row mt-5">
                                     <div className="col-md-5">

@@ -9,6 +9,7 @@ import Partners from '../../Partners/Partners';
 import TestimonialSlider from '../../TestimonialsSlider/TestimonialSlider';
 
 const HomeRoute = () => {
+    document.title = "Home | Vaccine Common Goods"
     return (
         <div>
             <Header/>

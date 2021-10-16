@@ -9,6 +9,7 @@ import ppvImg from "../../../assets/ppv.png"
 import JoinTheCauseRouter from '../JoinTheCauseRouter/JoinTheCauseRouter';
 
 const EventRoute = () => {
+    document.title = "Events | Vaccine Common Goods"
     return (
         <section className="events-route-section">
             <Navbar/>

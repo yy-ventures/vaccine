@@ -32,12 +32,12 @@ function App() {
             <PledgeRoute />
           </Route>
           <Route path="/events">
-            <EventRoute/>
+            <EventRoute />
           </Route>
           <Route path="/activities">
-            <ActivityRoute/>
+            <ActivityRoute />
           </Route>
-          <Route path="/">
+          <Route exact path="/">
             <HomeRoute />
           </Route>
         </Switch>

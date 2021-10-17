@@ -10,8 +10,8 @@ import { motion } from "framer-motion"
 const HeaderPeople = () => {
     const [firstIndex, setFirstIndex] = useState(0)
     const [secondIndex, setSecondIndex] = useState(0)
-    const firstTimeoutRef = useRef(null)
-    const secondTimeoutRef = useRef(null)
+    const firstTimeoutRef = useRef(0)
+    const secondTimeoutRef = useRef(0)
     const firstDelay = 2300
     const secondDelay = 4700
     

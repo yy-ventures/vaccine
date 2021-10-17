@@ -4,7 +4,6 @@ import avaaz from "../../assets/avaaz.svg";
 import newVaccine from "../../assets/new-vaccine.svg";
 import Aos from "aos"
 import "aos/dist/aos.css"
-import { Link } from 'react-router-dom';
 
 const Events = () => {
     useEffect(()=> {

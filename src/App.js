@@ -12,6 +12,7 @@ import Footer from './Components/Shared/Footer/Footer';
 import FormRoute from './Components/Routes/FormRoute/FormRoute';
 import PledgeRoute from './Components/Routes/PledgeRoute/PledgeRoute';
 import EventRoute from './Components/Routes/EventRoute/EventRoute';
+import ActivityRoute from './Components/Routes/ActivityRoute/ActivityRoute';
 
 function App() {
   return (
@@ -32,6 +33,9 @@ function App() {
           </Route>
           <Route path="/events">
             <EventRoute/>
+          </Route>
+          <Route path="/activities">
+            <ActivityRoute/>
           </Route>
           <Route path="/">
             <HomeRoute />

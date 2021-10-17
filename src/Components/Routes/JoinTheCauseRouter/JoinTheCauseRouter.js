@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import "./JoinTheCauseRoute.scss"
 
 const JoinTheCauseRouter = () => {
@@ -9,7 +10,7 @@ const JoinTheCauseRouter = () => {
                 <p>Help us achieve our goal to secure <br/> a better future for all</p>
             </div>
             <div>
-                <button>pledge now</button>
+                <Link to="/pledge"><button>pledge now</button></Link>
             </div>
         </section>
     );

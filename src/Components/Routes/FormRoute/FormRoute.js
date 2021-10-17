@@ -333,7 +333,7 @@ const FormRoute = () => {
                                         <input type="file" className="form-control"/>
                                     </div>
                                 </div>
-                                {/* form third portion */}
+                                {/* form fourth portion */}
                                 <div className="mt-5">
                                     <div className="form-check-upload">
                                         <h4>Permission To Use Your Pledge <FontAwesomeIcon icon={faStarOfLife} /></h4>
@@ -355,7 +355,6 @@ const FormRoute = () => {
                     </div>
                 </div>
             </div>
-            <JoinTheCauseRouter/>
         </section>
     );
 };

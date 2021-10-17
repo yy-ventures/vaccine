@@ -1,0 +1,20 @@
+@import "../../../global.scss";
+
+.activity-route-section{
+    .activity-route-section-container{
+        width: 80%;
+        margin: 0 auto;
+        .activity-list{
+            img{
+                height: 100px;
+            }
+            h4{
+                color: $textColor;
+                font-size: 22px;
+            }
+            p{
+                color: $textColor;  
+            }
+        }
+    }
+}

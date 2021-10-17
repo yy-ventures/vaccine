@@ -23,12 +23,6 @@ export default class LogoSlider extends React.Component {
     );
 
   render() {
-    const items = this.objectMap(
-      {"1":1,"2":2,"3":3},
-      () => {
-        return <div className="slider-container"></div>;
-      }
-    );
     const settings = {
       arrows: true,
       infinite: true,
@@ -43,12 +37,12 @@ export default class LogoSlider extends React.Component {
       <section className="slider-section">
         <div className="logo-slider">
             <Slider {...settings}>
-                <div  className="logo-div"><img src={avaaz}/></div>
-                <div className="logo-div" ><img src={peopleVaccine}/></div>
-                <div  className="logo-div" ><img src={avaaz}/></div>
-                <div className="logo-div" ><img src={peopleVaccine}/></div>
-                <div className="logo-div" ><img src={avaaz}/></div>
-                <div className="logo-div"><img src={peopleVaccine}/></div>
+                <div  className="logo-div"><img src={avaaz} alt="mt"/></div>
+                <div className="logo-div" ><img src={peopleVaccine} alt="mt"/></div>
+                <div  className="logo-div" ><img src={avaaz} alt="mt"/></div>
+                <div className="logo-div" ><img src={peopleVaccine} alt="mt"/></div>
+                <div className="logo-div" ><img src={avaaz} alt="mt"/></div>
+                <div className="logo-div"><img src={peopleVaccine} alt="mt"/></div>
             </Slider>
         </div>
     </section>

@@ -1,6 +1,5 @@
 import React from 'react';
 import Navbar from '../../Shared/Navbar/Navbar';
-import JoinTheCauseRouter from '../JoinTheCauseRouter/JoinTheCauseRouter';
 import "./FormRoute.scss";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faStarOfLife } from '@fortawesome/free-solid-svg-icons'

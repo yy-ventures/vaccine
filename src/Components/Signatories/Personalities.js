@@ -9,12 +9,11 @@ import JoinTheCauseRouter from "../Routes/JoinTheCauseRouter/JoinTheCauseRouter"
 
 export const Personalities = () => {
   document.title = "Signatories | Vaccine Common Goods"
-  const [posts, setPosts] = useState(personalities);
+  const [posts] = useState(personalities);
   //const [loading, setLoading] = useState(false);
   const [currentPage, setCurrentPage] = useState(1);
   const [postsPerPage] = useState(15);
 
-  const personalitiesArray = [];
   const indexOfLastPost = currentPage * postsPerPage;
   const indexOfFirstPost = indexOfLastPost - postsPerPage;
   const currentPosts = posts.slice(indexOfFirstPost, indexOfLastPost);

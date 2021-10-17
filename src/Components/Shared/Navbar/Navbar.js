@@ -24,7 +24,7 @@ const Navbar = () => {
                     <NavLink to="/signatories" exact activeClassName="navActive">Signatories</NavLink>
                     <NavLink to="/events" exact activeClassName="navActive">Events</NavLink>
                     <NavLink to="/partners" exact activeClassName="navActive">Partners</NavLink>
-                    <NavLink to="/pledge" className="join-btn">Join</NavLink>
+                    <NavLink to="/pledge" exact className="join-btn">Join</NavLink>
                 </div>
                 <div className="cross-icon" onClick={handleCloseClick}>
                     <FontAwesomeIcon icon={faTimes} />

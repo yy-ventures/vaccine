@@ -31,16 +31,6 @@ function App() {
           <Route path="/people-pledge/">
             <PledgeRoute />
           </Route>
-<<<<<<< HEAD
-          <Route path="/events/">
-            <EventRoute/>
-          </Route>
-          <Route path="/activities/">
-            <ActivityRoute/>
-          </Route>
-        <Route path="/">
-            <HomeRoute/>
-=======
           <Route path="/events">
             <EventRoute />
           </Route>
@@ -49,9 +39,7 @@ function App() {
           </Route>
           <Route exact path="/">
             <HomeRoute />
->>>>>>> 555e9272e5ed744ed4cdbc580f39173fcb32a477
           </Route>
-          
         </Switch>
         <Footer />
       </Router>

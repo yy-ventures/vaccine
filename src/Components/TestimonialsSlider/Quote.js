@@ -1,14 +1,14 @@
 import React from 'react'
 import './Quote.scss';
 
-export default function Quote(props) {
-    props= props.info;
+export default function Quote({name, quote, designation}) {
+    console.log(name, quote, designation);
     return (
         <div id="quote_container">
-           <p id="testimonial">"{props.quote}"</p>
+           <p id="testimonial">"{quote}"</p>
            <div id="lower_text">
-           <p id="name"> {props.name} </p>
-           <p id ="designation"> {props.designation}</p>
+           <p id="name"> {name} </p>
+           <p id ="designation"> {designation}</p>
            </div>
         </div>
     )

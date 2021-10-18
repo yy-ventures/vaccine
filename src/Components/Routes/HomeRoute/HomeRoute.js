@@ -1,4 +1,3 @@
-import React from 'react';
 import About from '../../About/About';
 import Activities from '../../Activities/Activities';
 import Events from '../../Events/Events';
@@ -9,9 +8,9 @@ import Partners from '../../Partners/Partners';
 import TestimonialSlider from '../../TestimonialsSlider/TestimonialSlider';
 
 const HomeRoute = () => {
-    document.title = "Home | Vaccine Common Goods"
+    document.title = "Home | Vaccine Common Goods";
     return (
-        <div>
+        <>
             <Header/>
             <About/>
             <Laureate/>
@@ -20,7 +19,7 @@ const HomeRoute = () => {
             <Events/>
             <Partners/>
             <JoinTheCause/>
-        </div>
+        </>
     );
 };
 

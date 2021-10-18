@@ -5,15 +5,10 @@
     z-index:1;
     position: relative;
     bottom: -10%;
-    .slider-container {
-        display: grid !important;
-        grid-template-columns: 1fr 1fr;
-    }
     outline: none;
 }
 .slide_d {
-    display: flex !important;
-    justify-content: space-between;
+    overflow: hidden;
     img {
         object-fit: cover;
         object-position: center;
@@ -26,16 +21,15 @@
 
 .testimonials {
     background-color: #E6F6FF;
-    height: 90vh;
+    min-height: 90vh;
     position: relative;
-    .slick-dots {
-        position: relative;
-        left: 21%;
+    .slick-dots { 
+        bottom: -35px;
         li {
             margin-left: 2px !important;
             margin-right: 2px    !important;
             button:before {
-                font-size: 16px;
+                font-size: 12px;
                 color: $white;
                 opacity: 0.5;
             }

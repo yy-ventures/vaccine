@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import { useRef } from 'react';
 import "./Navbar.scss"
 import vaccineLogo from "../../../assets/vaccine-logo.svg"
 import { Link, NavLink } from 'react-router-dom';

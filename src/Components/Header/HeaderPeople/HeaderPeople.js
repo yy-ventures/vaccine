@@ -1,8 +1,7 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState, useRef } from 'react';
 import "./HeaderPeople.scss";
 import malala from "../../../assets/people/yousafzai.png"
 import mairead from "../../../assets/people/mairead.jpg"
-import { useRef } from 'react/cjs/react.development';
 import firstFivePeople from "../../../assets/Data/PeopleData/FirstFivePeopleData.json"
 import secondFivePeople from "../../../assets/Data/PeopleData/SecondFivePeopleData.json"
 import { motion } from "framer-motion"

@@ -17,29 +17,30 @@ import ActivityRoute from './Components/Routes/ActivityRoute/ActivityRoute';
 function App() {
   return (
     <div className="App">
-      <Router>
+      <Router >
         <Switch>
-          <Route path="/signatories">
+          <Route path="/signatories/">
             <Personalities />
           </Route>
-          <Route path="/partners">
+          <Route path="/partners/">
             <PartnersRoute />
           </Route>
-          <Route path="/pledge">
+          <Route path="/pledge/">
             <FormRoute />
           </Route>
-          <Route path="/people-pledge">
+          <Route path="/people-pledge/">
             <PledgeRoute />
           </Route>
-          <Route path="/events">
+          <Route path="/events/">
             <EventRoute/>
           </Route>
-          <Route path="/activities">
+          <Route path="/activities/">
             <ActivityRoute/>
           </Route>
-          <Route path="/">
-            <HomeRoute />
+        <Route path="/">
+            <HomeRoute/>
           </Route>
+          
         </Switch>
         <Footer />
       </Router>

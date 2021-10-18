@@ -4,7 +4,6 @@ import './Headshot.scss';
 
 
 export default function Headshot(props) {
-    console.log(props);
 
     return (
         <div id="headshot_container">

@@ -45,10 +45,12 @@
         }
         .cross-icon{
             display: none;
+            cursor: pointer;
         }
     }
     .menu-icon{
         display: none;
+        cursor: pointer;
     }
 }
 
@@ -72,7 +74,8 @@
                 a{
                     display: block;
                     text-align: center;
-                    margin-top: 1rem;
+                    margin-top: 2rem;
+                    color: $white;
                 }
             }
             .cross-icon{

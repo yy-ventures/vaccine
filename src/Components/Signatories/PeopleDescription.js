@@ -4,7 +4,7 @@ import './PeopleDescription.scss';
 export default function PeopleDescription(props) {
     const {full_name, known_for, image} = props;
     return (
-        <div className="col-md-4 col-sm-4 people-description mt-4">
+        <div className="col-lg-4 col-md-6 col-sm-6 people-description mt-4">
             <div className="row">
               <div className="col-md-6 img-fluid p-0">
                 <img
@@ -13,7 +13,7 @@ export default function PeopleDescription(props) {
                   className="img-fluid"
                 />
               </div>
-              <div className="col-md-6 p-0 d-flex flex-column justify-content-end">
+              <div className="col-lg-6 col-md-6 col-sm-4 p-0 d-flex flex-column justify-content-end">
                 <p id="personality-name">{full_name}</p>
                 <p id="personality-status">{known_for}</p>
               </div>

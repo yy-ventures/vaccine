@@ -7,7 +7,7 @@
     img{
         
         width: 280px;
-        border-radius: 20px;
+        border-radius: 15px;
         object-fit: cover;
         z-index: 2;
     }
@@ -37,5 +37,26 @@
     }
     p ~ p {
         margin-top: 0.8em;
+    }
+}
+
+@media (max-width: 900px) {
+    .people-description{
+        text-align: center;
+        img{
+            width: 120px;
+        }
+        p:nth-child(1){
+            text-align: center;
+            margin-top: 1rem;
+            margin-left: 4rem;
+            padding-left: 0;
+        }
+        p:nth-child(2){
+            text-align: center;
+            margin-top: 1rem;
+            margin-left: 4rem;
+            padding-left: 0;
+        }
     }
 }

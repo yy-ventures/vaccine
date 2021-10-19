@@ -5,12 +5,12 @@
     background-color: $skyBlue;
     h2{
         color: $primaryColor;
-        font-size: 3.5vw;
+        font-size: 3.5rem;
         font-weight: bold;
         text-transform: uppercase;
     }
     p{
-        font-size: 1.4vw;
+        font-size: 1.4rem;
         color: $textColor;
     }
     button{
@@ -23,5 +23,16 @@
         border-radius: 15px;
         font-size: 1.2rem;
         text-transform: uppercase;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .join-the-cause-router-section{
+        h2{
+            font-size: 2rem;
+        }
+        p{
+            font-size: 1rem;
+        }
     }
 }

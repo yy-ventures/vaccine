@@ -4,7 +4,7 @@ import "./JoinTheCauseRoute.scss"
 
 const JoinTheCauseRouter = () => {
     return (
-        <section className="join-the-cause-router-section d-flex justify-content-around align-items-center">
+        <section className="join-the-cause-router-section d-flex justify-content-around align-items-center flex-column flex-lg-row flex-md-row">
             <div className="text-center">
                 <h2>join the cause</h2>
                 <p>Help us achieve our goal to secure <br/> a better future for all</p>

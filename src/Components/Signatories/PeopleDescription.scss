@@ -3,38 +3,39 @@
 .people-description{
     border: 5px solid rgba(1,1,1,0);
     position: relative;
+    padding-left: 0;
     img{
-        // max-width: ;
-        height: 160px;
-        width: 160px;
+        
+        width: 280px;
         border-radius: 20px;
         object-fit: cover;
         z-index: 2;
     }
     p{
-        text-align: right;
-        position: absolute;
+        text-align: left;
+        // white-space: pre-wrap;
+        position: relative;
         z-index: -1;
         margin: 0;
+        left: -35px;
+        padding: 0.5em;
+        padding-left: 3em;
     }
     p:nth-child(1){
         border: 1px solid $secondaryColor;
         border-radius: 10px;
         font-weight: 400;
-        padding: 0.3em 1em;
         font-size: 0.8rem;
-        bottom: 23%;
-        left: 27%;
-        width: 50%;
+        // width: 50%;
     }
     p:nth-child(2){
         border: 1px solid $primaryColor;
         border-radius: 10px;
         font-weight: 300;
-        padding: 0.3em 1em;
-        bottom: 0;
-        left: 35%;
-        width: 50%;
+        // width: 50%;
         font-size: 0.8rem;
+    }
+    p ~ p {
+        margin-top: 0.8em;
     }
 }

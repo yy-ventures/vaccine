@@ -1,9 +1,12 @@
 @import "../../global.scss";
 
 .section-laureate{
-    height: 900px;
+    min-height: 1000px;
     background-color: $skyBlue;
     position: relative;
+    padding: 5rem 0 15rem 0;
+
+
     .laureate-container{
         height: 65vh;
         margin: 0 auto;

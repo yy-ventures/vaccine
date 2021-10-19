@@ -1,12 +1,12 @@
 @import '../../global.scss';
 
-
 .carousel {
     z-index:1;
     position: relative;
     bottom: -10%;
     outline: none;
 }
+
 .slide_d {
     overflow: hidden;
     img {
@@ -23,6 +23,7 @@
     background-color: #E6F6FF;
     min-height: 90vh;
     position: relative;
+    
     .slick-dots { 
         bottom: -35px;
         li {

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Pagination from "./Pagination";
+import PaginationComp from "./Pagination";
 import PeopleDescription from "./PeopleDescription";
 import personalities from "./personalities.json";
 import "./Personalities.scss";
@@ -44,7 +44,7 @@ export const Personalities = () => {
         </div>
         <div className="py-5">
           <div className="row py-5">
-            <Pagination
+            <PaginationComp
               postsPerPage={postsPerPage}
               totalPosts={personalities.length}
               paginate={paginate}

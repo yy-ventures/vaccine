@@ -16,14 +16,14 @@ export default class TestimonialSlider extends React.Component {
     super(props);
     this.state = {
       nav1: null,
-      nav2: null
+      nav2: null,
     };
   }
 
   componentDidMount() {
     this.setState({
       nav1: this.slider1,
-      nav2: this.slider2
+      nav2: this.slider2,
     });
   }
 
@@ -33,26 +33,23 @@ export default class TestimonialSlider extends React.Component {
     );
 
   render() {
-    const items = this.objectMap(
-      testimonials,
-      ({ image }) => {
-        return (
-          <>
+    const items = this.objectMap(testimonials, ({ image }) => {
+      return (
+        <>
           <div className="slider-container">
             <Headshot image={image} />
           </div>
-          </>
-        );
-      }
-    );
+        </>
+      );
+    });
     const quotes = this.objectMap(
       testimonials,
-      ({ name, quote, designation}) => {
+      ({ name, quote, designation }) => {
         return (
           <>
-          <div className="slider-container">
-            <Quote name={name} quote={quote} designation={designation}/>
-          </div>
+            <div className="slider-container">
+              <Quote name={name} quote={quote} designation={designation} />
+            </div>
           </>
         );
       }
@@ -82,18 +79,26 @@ export default class TestimonialSlider extends React.Component {
       <>
         <div className="testimonials">
           <div className="row carousel align-items-center">
-          <div className="col-md-6 ">
-          <Slider asNavFor={this.state.nav1} {...settings_quote} ref={(slider) => (this.slider2 = slider)}>
-              {Object.values(quotes)}
-          </Slider>
+            <div className="col-md-6 ">
+              <Slider
+                asNavFor={this.state.nav1}
+                {...settings_quote}
+                ref={(slider) => (this.slider2 = slider)}
+              >
+                {Object.values(quotes)}
+              </Slider>
+            </div>
+            <div className="col-md-6">
+              <Slider
+                asNavFor={this.state.nav2}
+                {...settings_image}
+                ref={(slider) => (this.slider1 = slider)}
+              >
+                {Object.values(items)}
+              </Slider>
+            </div>
           </div>
-          <div className="col-md-6">
-          <Slider asNavFor={this.state.nav2} {...settings_image} ref={(slider) => (this.slider1 = slider)}>
-              {Object.values(items)}
-          </Slider>
-          </div>
-          </div>
-          <div id="circle"></div>
+        <div id="circle"></div>
         </div>
       </>
     );

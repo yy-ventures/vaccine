@@ -7,7 +7,7 @@
         .events-route-header{
             h1{
                 color: $primaryColor;
-                font-size: 4vw;
+                font-size: 4rem;
                 text-transform: uppercase;
                 font-weight: 900;
                 z-index: 100;
@@ -64,6 +64,27 @@
                 h4{
                     color: $white;
                     font-size: 1.2rem;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 900px){
+    .events-route-section{
+        .events-route-section-container{
+            .events-route-header{
+                height: auto;
+                padding: 2rem 0;
+                margin-top: 2rem;
+                h1{
+                    font-size: 2rem;
+                }
+                .stroke{
+                    display: none;
+                }
+                img{
+                    height: 200px;
                 }
             }
         }

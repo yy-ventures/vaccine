@@ -9,7 +9,7 @@ const PledgeRoute = () => {
         <section className="pledge-route-section">
             <Navbar />
             <div className="pledge-route-container py-5">
-                <div className="main-pledge-header-section d-flex align-items-center justify-content-between">
+                <div className="main-pledge-header-section d-flex align-items-lg-center justify-content-lg-between align-items-md-center justify-content-md-between flex-column flex-lg-row flex-md-row">
                     <div>
                         <div className="main-pledge-header position-relative">
                             <div>
@@ -273,7 +273,7 @@ const PledgeRoute = () => {
                 </div>
                 <div className="main-pledge-body-section">
                     <div className="row">
-                        {pledgeData.map(pledgePeople => <div className="col-md-4 mt-4">
+                        {pledgeData.map(pledgePeople => <div className="col-lg-4 col-md-6 col-6 mt-4">
                             <div className="row d-flex align-items-center">
                                 <div className="col-md-3">
                                     <div className="pledge-people-image">

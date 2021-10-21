@@ -11,11 +11,12 @@ header{
         .header-feature-text{
             h1{
                 color: $primaryColor;
-                font-size: 5vw;
+                font-size: 5rem;
                 text-transform: uppercase;
                 font-weight: 900;
                 z-index: 100;
                 position: relative;
+                line-height: 4.5rem;
             }
             .stroke{
                 color: $white;
@@ -24,6 +25,14 @@ header{
                 top: 0.4vw;
                 left: 0.3vw;
                 z-index: 0;
+            }
+            .red-million{
+                font-weight: bold;
+                color: $secondaryColor;
+            }
+            .signed-bold{
+                font-weight: bold;
+                color: $textColor;
             }
             h3{
                 color: $secondaryColor;
@@ -61,18 +70,20 @@ header{
 @media screen and (max-width: 900px) {
     header{
         height: auto;
-        padding: 2rem 0;
+        padding-bottom: 2rem;
         .header-container{
             .header-feature-text{
                 margin-top: 5rem;
                 h1{
-                    font-size: 3rem;
+                    font-size: 3.5rem;
+                    line-height: 3rem;
                 }
                 .stroke{
                     display: none;
                 }
                 h3{
                     font-size: 1.5rem;
+                    padding-bottom: 1rem;
                 }
                 h4{
                     font-size: 1.5rem;

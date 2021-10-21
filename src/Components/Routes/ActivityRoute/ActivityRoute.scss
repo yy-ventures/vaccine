@@ -18,3 +18,13 @@
         }
     }
 }
+
+@media screen and (max-width: 900px) {
+    .activity-route-section{
+        .activity-route-section-container{
+            .activity-list{
+                margin-top: 4rem;
+            }
+        }
+    }
+}

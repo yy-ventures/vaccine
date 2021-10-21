@@ -6,7 +6,7 @@
     .partners-route-header{
         h1{
             color: $primaryColor;
-            font-size: 4vw;
+            font-size: 4rem;
             text-transform: uppercase;
             font-weight: 900;
             z-index: 100;
@@ -22,7 +22,8 @@
         }
     }
     .partners-route-body{
-        height: 60vh;
+        height: auto;
+        padding: 1rem 0 5rem 0;
         .partners-route-brands{
             height: 100%;
             img{
@@ -30,8 +31,29 @@
             }
             p{
                 color: $textColor;
-                font-size: 1.2vw;
+                font-size: 1rem;
+                margin-top: 1rem;
             }
+        }
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .partners-route-container{
+        padding-top: 4rem;
+        .partners-route-header{
+            h1{
+                font-size: 2rem;
+            }
+            .stroke{
+                display: none;
+            }
+        }
+    }
+    .partners-route-body{
+        height: auto;
+        p{
+            margin-top: 1rem;
         }
     }
 }

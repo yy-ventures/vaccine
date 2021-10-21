@@ -8,7 +8,7 @@
             height: 20vh;
             h1{
                 color: $primaryColor;
-                font-size: 4vw;
+                font-size: 4rem;
                 text-transform: uppercase;
                 font-weight: 900;
                 z-index: 100;
@@ -24,7 +24,7 @@
             }
             p{
                 color: $textColor;
-                font-size: 1.2vw;
+                font-size: 1.2rem;
             }
             select{
                 width: 100%;
@@ -36,6 +36,9 @@
                 outline: none;
                 &:focus{
                     box-shadow: none;
+                }
+                option{
+                    padding: 1rem 0.5rem;
                 }
             }
         }
@@ -56,6 +59,24 @@
             }
             p{
                 color: #777;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .pledge-route-section{
+        .pledge-route-container{
+            .main-pledge-header-section{
+                height: auto;
+                padding: 2rem 0;
+                margin-top: 2rem;
+                h1{
+                    font-size: 2.5rem;
+                }
+                .stroke{
+                    display: none;
+                }
             }
         }
     }

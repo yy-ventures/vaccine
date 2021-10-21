@@ -25,7 +25,7 @@ export const Personalities = () => {
       <Navbar />
       <div className="personality-container">
         <div className="personalities-header d-flex align-items-center">
-          <div className="col-md-4 header-feature-text">
+          <div className="col-md-4 header-feature-text"> 
             <div className="position-relative">
               <h1>Personalities</h1>
               <h1 className="stroke">Personalities</h1>

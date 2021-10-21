@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 // import PaginationComp from "./Pagination";
+import ReactPaginate from 'react-paginate';
 import PeopleDescription from "./PeopleDescription";
 import personalities from "./personalities.json";
 import "./Personalities.scss";
@@ -49,6 +50,7 @@ export const Personalities = () => {
               totalPosts={personalities.length}
               paginate={paginate}
             /> */}
+            {}
           </div>
         </div>
       </div>

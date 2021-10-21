@@ -5,6 +5,9 @@
     position: relative;
     bottom: -10%;
     outline: none;
+    @media screen and (max-width: 901px){
+        flex-direction: column-reverse;
+    }
 }
 
 .slide_d {
@@ -21,9 +24,10 @@
 
 .testimonials {
     background-color: #E6F6FF;
-    min-height: 90vh;
+    height: 800px;
     position: relative;
-    
+    // vertical-align: middle;
+    padding-top: 6rem;
     .slick-dots { 
         bottom: -35px;
         li {

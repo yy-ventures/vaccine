@@ -77,8 +77,8 @@ export default class TestimonialSlider extends React.Component {
 
     return (
       <>
-        <section className="testimonials bg-dark ">
-          <div className="row carousel bg-danger">
+        <section className="testimonials  ">
+          <div className="row carousel ">
             <div className="col-md-6 ">
               <Slider
                 asNavFor={this.state.nav1}
@@ -98,7 +98,7 @@ export default class TestimonialSlider extends React.Component {
               </Slider>
             </div>
           </div>
-        {/* <div id="circle"></div> */}
+        <div id="circle"></div>
         </section>
       </>
     );

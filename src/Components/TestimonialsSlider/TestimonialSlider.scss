@@ -7,6 +7,7 @@
     outline: none;
     @media screen and (max-width: 901px){
         flex-direction: column-reverse;
+        align-items: center;
     }
 }
 
@@ -26,8 +27,12 @@
     background-color: #E6F6FF;
     height: 800px;
     position: relative;
-    // vertical-align: middle;
+    overflow: hidden;
     padding-top: 6rem;
+    @media screen and (max-width: 901px){
+        height: auto;
+        padding: 3rem 0;
+    }
     .slick-dots { 
         bottom: -35px;
         li {

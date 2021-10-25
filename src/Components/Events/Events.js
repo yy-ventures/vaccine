@@ -32,6 +32,7 @@ const Events = () => {
                                     </div>
                                 </a>
                             </div>
+                            
                             <div className="col-md-6 mt-3" data-aos="fade-left">
                                 <a href="https://peoplesvaccine.org/">
                                     <div className="card-data">

@@ -10,17 +10,17 @@
     .join-the-cause-content{
         position: absolute;
         text-align: right;
-        top: 10vw;
-        right: 5.2vw;
+        top: 10rem;
+        right: 5.2rem;
         h2{
-            font-size: 3.5vw;
+            font-size: 3.5rem;
             text-transform: uppercase;
             color: $white;
             font-weight: bold;
         }
         p{
             color: $white;
-            font-size: 1.6vw;
+            font-size: 1.6rem;
         }
     }
     .join-the-cause-btn{
@@ -43,6 +43,7 @@
     .join-the-cause-section{
         height: 600px;
         .join-the-cause-content{
+            margin-top: 4rem;
             h2{
                 font-size: 2rem;
             }
@@ -51,7 +52,7 @@
             }
         }
         .join-the-cause-btn{
-            margin-right: 2rem;
+            margin-top: 10rem;
             button{
                 font-size: 16px;
             }

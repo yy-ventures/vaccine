@@ -1,11 +1,13 @@
 import {useState} from 'react';
+
+
 import "./Pagination.scss";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-import Pagination from 'react-bootstrap/Pagination'
+
+import Pagination from 'react-bootstrap/Pagination';
 
 const setPage = (currentPage, delta, paginate, setCurrentPage) => {
-  console.log(paginate);
   paginate(currentPage+ delta);
   setCurrentPage(currentPage+ delta);
 }
@@ -45,11 +47,10 @@ function PaginationComp({ postsPerPage, totalPosts, paginate }) {
     <nav>
       <ul className='pagination justify-content-center'>
         <Pagination>
-          {currentPage>1?<Pagination.Prev onClick={(currentPage,index=-1, paginate, setCurrentPage)=> {return setPage(currentPage,-1, paginate=paginate, setCurrentPage)}}/>:null}
+          {currentPage>1?<Pagination.Prev onClick={()=> {setPage(currentPage,-1, paginate, setCurrentPage)}}/>:null}
           {pageNumbers.map((numbers, index)=>PaginationEllipsisLogic(numbers,index, paginate, setCurrentPage, currentPage, pageNumbers.length))}
-          {currentPage===pageNumbers.length?<Pagination.Next onClick={(currentPage,index=1, paginate, setCurrentPage)=> {return setPage(currentPage,1, paginate=paginate, setCurrentPage)}}/>:null}
+          {currentPage<pageNumbers.length?<Pagination.Next onClick={()=> {setPage(currentPage,1, paginate, setCurrentPage)}}/>:null}
         </Pagination>
-
       </ul>
     </nav>
   );

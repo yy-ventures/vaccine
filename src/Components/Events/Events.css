@@ -1,0 +1,109 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  overflow-x: hidden;
+}
+
+.events-section {
+  height: 100vh;
+  position: relative;
+}
+
+.events-section .events-container {
+  width: 80%;
+  height: 80vh;
+  z-index: 500;
+}
+
+.events-section .events-container .events-header h2 {
+  color: #3A8FC5;
+  font-weight: bold;
+  font-size: 4rem;
+  text-transform: uppercase;
+}
+
+.events-section .events-container .events-header p {
+  font-size: 1.4rem;
+  color: #4D4D4D;
+}
+
+.events-section .events-container .events-body {
+  height: 100%;
+}
+
+.events-section .events-container .events-body a {
+  text-decoration: none;
+}
+
+.events-section .events-container .events-body .card-data .avaaz-card-img {
+  border-top-left-radius: 2rem;
+  border-top-right-radius: 2rem;
+}
+
+.events-section .events-container .events-body .card-data .avaaz-card-img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-top-left-radius: 2rem;
+  border-top-right-radius: 2rem;
+}
+
+.events-section .events-container .events-body .card-data .vaccine-card-img {
+  border-top-left-radius: 2rem;
+  border-top-right-radius: 2rem;
+}
+
+.events-section .events-container .events-body .card-data .vaccine-card-img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-top-left-radius: 2rem;
+  border-top-right-radius: 2rem;
+}
+
+.events-section .events-container .events-body .card-data .avaaz-card-footer {
+  background-color: #D55363;
+  border-bottom-left-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+}
+
+.events-section .events-container .events-body .card-data .avaaz-card-footer h3 {
+  color: #ffffff;
+  font-size: 1.3rem;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+.events-section .events-container .events-body .card-data .vaccine-card-footer {
+  background-color: #3A8FC5;
+  border-bottom-left-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+}
+
+.events-section .events-container .events-body .card-data .vaccine-card-footer h3 {
+  color: #ffffff;
+  font-size: 1.3rem;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+.events-section .corner-yellow-circle {
+  height: 600px;
+  width: 600px;
+  background-color: #E19D53;
+  position: absolute;
+  right: 0;
+  top: 0;
+  border-bottom-left-radius: 100%;
+  border-bottom-right-radius: 0;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+@media screen and (max-width: 601px) {
+  .events-section .corner-yellow-circle {
+    display: none;
+  }
+}
+/*# sourceMappingURL=Events.css.map */

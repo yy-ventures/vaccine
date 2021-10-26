@@ -1,0 +1,38 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  overflow-x: hidden;
+}
+
+.section-activities {
+  background: #E6F6FF;
+  height: 350px;
+}
+
+.section-activities .activity-container {
+  height: 80%;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.section-activities .activity-container img {
+  height: 13vh;
+}
+
+.section-activities .activity-container p {
+  margin-top: 1.5rem;
+  color: #4D4D4D;
+  font-weight: bold;
+  font-size: 1.3vw;
+}
+
+@media screen and (max-width: 900px) {
+  .section-activities {
+    height: auto;
+    padding: 4rem 0;
+    background-color: antiquewhite;
+  }
+  .section-activities .activity-container p {
+    font-size: 1.1rem;
+  }
+}
+/*# sourceMappingURL=Activities.css.map */

@@ -1,0 +1,32 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  overflow-x: hidden;
+}
+
+.laureate-people-container .people-image {
+  height: 11rem;
+  margin-top: 1rem;
+  border-radius: 1.2rem;
+}
+
+.laureate-people-container .people-image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 1.2rem;
+}
+
+@media screen and (max-width: 900px) {
+  .laureate-people-container {
+    padding: 0;
+  }
+  .laureate-people-container .people-image {
+    height: 70px;
+    width: 100px;
+  }
+  .laureate-people-container .people-image img {
+    border-radius: 12px;
+  }
+}
+/*# sourceMappingURL=LaureatePeople.css.map */

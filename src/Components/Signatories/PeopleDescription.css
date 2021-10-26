@@ -1,0 +1,68 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  overflow-x: hidden;
+}
+
+.people-description {
+  border: 5px solid rgba(1, 1, 1, 0);
+  position: relative;
+  padding-left: 0;
+}
+
+.people-description img {
+  width: 280px;
+  border-radius: 15px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: 2;
+}
+
+.people-description p {
+  text-align: left;
+  position: relative;
+  z-index: -1;
+  margin: 0;
+  left: -35px;
+  padding: 0.5em;
+  padding-left: 3em;
+}
+
+.people-description p:nth-child(1) {
+  border: 1px solid #D55363;
+  border-radius: 10px;
+  font-weight: 400;
+  font-size: 0.8rem;
+}
+
+.people-description p:nth-child(2) {
+  border: 1px solid #3A8FC5;
+  border-radius: 10px;
+  font-weight: 300;
+  font-size: 0.8rem;
+}
+
+.people-description p ~ p {
+  margin-top: 0.8em;
+}
+
+@media (max-width: 900px) {
+  .people-description {
+    text-align: center;
+  }
+  .people-description img {
+    width: 120px;
+  }
+  .people-description p:nth-child(1) {
+    text-align: center;
+    margin-top: 1rem;
+    margin-left: 4rem;
+    padding-left: 0;
+  }
+  .people-description p:nth-child(2) {
+    text-align: center;
+    margin-top: 1rem;
+    margin-left: 4rem;
+    padding-left: 0;
+  }
+}
+/*# sourceMappingURL=PeopleDescription.css.map */

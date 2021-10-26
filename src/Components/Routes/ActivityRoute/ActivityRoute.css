@@ -1,0 +1,29 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  overflow-x: hidden;
+}
+
+.activity-route-section .activity-route-section-container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.activity-route-section .activity-route-section-container .activity-list img {
+  height: 100px;
+}
+
+.activity-route-section .activity-route-section-container .activity-list h4 {
+  color: #4D4D4D;
+  font-size: 22px;
+}
+
+.activity-route-section .activity-route-section-container .activity-list p {
+  color: #4D4D4D;
+}
+
+@media screen and (max-width: 900px) {
+  .activity-route-section .activity-route-section-container .activity-list {
+    margin-top: 4rem;
+  }
+}
+/*# sourceMappingURL=ActivityRoute.css.map */

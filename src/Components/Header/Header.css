@@ -1,0 +1,106 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  overflow-x: hidden;
+}
+
+header {
+  height: 100vh;
+  background-image: url("../../assets/vaccine-background.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+header .header-container {
+  margin-left: 10vw;
+}
+
+header .header-container .header-feature-text h1 {
+  color: #3A8FC5;
+  font-size: 5rem;
+  text-transform: uppercase;
+  font-weight: 900;
+  z-index: 100;
+  position: relative;
+  line-height: 4.5rem;
+}
+
+header .header-container .header-feature-text .stroke {
+  color: #ffffff;
+  position: absolute;
+  -webkit-text-stroke: 1px #3A8FC5;
+  top: 0.05em;
+  left: 0.05em;
+  z-index: 0;
+}
+
+header .header-container .header-feature-text .red-million {
+  font-weight: bold;
+  color: #D55363;
+}
+
+header .header-container .header-feature-text .signed-bold {
+  font-weight: bold;
+  color: #4D4D4D;
+}
+
+header .header-container .header-feature-text h3 {
+  color: #D55363;
+  font-weight: 900;
+  font-size: 2.4rem;
+}
+
+header .header-container .header-feature-text h4 {
+  color: #4D4D4D;
+  font-weight: 900;
+  text-transform: capitalize;
+  font-size: 2.1rem;
+}
+
+header .header-container .header-feature-text p {
+  font-size: 1.2rem;
+  color: #4D4D4D;
+  margin-top: 2rem;
+  width: 60%;
+}
+
+header .corner-blue-circle {
+  height: 200px;
+  width: 200px;
+  background-color: #3A8FC5;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  border-top-left-radius: 100%;
+  border-top-right-radius: 0;
+}
+
+@media screen and (max-width: 900px) {
+  header {
+    height: auto;
+    padding-bottom: 2rem;
+  }
+  header .header-container .header-feature-text {
+    margin-top: 5rem;
+  }
+  header .header-container .header-feature-text h1 {
+    font-size: 3.5rem;
+    line-height: 3rem;
+  }
+  header .header-container .header-feature-text .stroke {
+    display: block;
+  }
+  header .header-container .header-feature-text h3 {
+    font-size: 1.5rem;
+    padding-bottom: 1rem;
+  }
+  header .header-container .header-feature-text h4 {
+    font-size: 1.5rem;
+  }
+  header .corner-blue-circle {
+    display: none;
+  }
+}
+/*# sourceMappingURL=Header.css.map */

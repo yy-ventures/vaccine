@@ -1,0 +1,70 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  overflow-x: hidden;
+}
+
+.join-the-cause-section {
+  height: 100vh;
+  background-image: url("../../assets/yunus-speech.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.join-the-cause-section .join-the-cause-content {
+  position: absolute;
+  text-align: right;
+  top: 10rem;
+  right: 5.2rem;
+}
+
+.join-the-cause-section .join-the-cause-content h2 {
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.join-the-cause-section .join-the-cause-content p {
+  color: #ffffff;
+  font-size: 1.6rem;
+}
+
+.join-the-cause-section .join-the-cause-btn {
+  margin-right: 5rem;
+}
+
+.join-the-cause-section .join-the-cause-btn button {
+  outline: none;
+  border: none;
+  padding: 12px 36px;
+  background: #D55363;
+  color: #ffffff;
+  font-size: 1.4vw;
+  text-transform: uppercase;
+  font-weight: bold;
+  border-radius: 16px;
+}
+
+@media screen and (max-width: 900px) {
+  .join-the-cause-section {
+    height: 600px;
+  }
+  .join-the-cause-section .join-the-cause-content {
+    margin-top: 4rem;
+  }
+  .join-the-cause-section .join-the-cause-content h2 {
+    font-size: 2rem;
+  }
+  .join-the-cause-section .join-the-cause-content p {
+    font-size: 16px;
+  }
+  .join-the-cause-section .join-the-cause-btn {
+    margin-top: 10rem;
+  }
+  .join-the-cause-section .join-the-cause-btn button {
+    font-size: 16px;
+  }
+}
+/*# sourceMappingURL=JoinTheCause.css.map */

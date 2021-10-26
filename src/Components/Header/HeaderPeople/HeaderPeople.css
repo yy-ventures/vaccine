@@ -1,0 +1,159 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  overflow-x: hidden;
+}
+
+.people-container {
+  height: 70vh;
+}
+
+.people-container .left-side-people .left-person-one {
+  height: 25vh;
+  width: 60%;
+  position: absolute;
+  border-radius: 15px;
+  top: 10vh;
+  right: 0;
+  overflow: hidden;
+}
+
+.people-container .left-side-people .left-person-one .slideshowSlider {
+  white-space: nowrap;
+  -webkit-transition: ease 1000ms;
+  transition: ease 1000ms;
+}
+
+.people-container .left-side-people .left-person-one .slideshowSlider .slide {
+  display: inline-block;
+  height: 25vh;
+  width: 100%;
+}
+
+.people-container .left-side-people .left-person-one .slideshowSlider .slide img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 15px;
+}
+
+.people-container .left-side-people .left-person-two {
+  height: 30vh;
+  width: 40%;
+  background-color: #3A8FC5;
+  position: absolute;
+  border-radius: 15px;
+  top: 37vh;
+  right: 0;
+}
+
+.people-container .left-side-people .left-person-two h2 {
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 2.5rem;
+}
+
+.people-container .left-side-people .left-person-two p {
+  color: #ffffff;
+  font-size: 1.2rem;
+  text-transform: capitalize;
+}
+
+.people-container .left-side-people .left-person-three {
+  height: 22vh;
+  width: 40%;
+  position: absolute;
+  border-radius: 15px;
+  top: 37vh;
+  left: 5vw;
+}
+
+.people-container .left-side-people .left-person-three img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 15px;
+}
+
+.people-container .right-side-people .right-person-one {
+  height: 40vh;
+  width: 50%;
+  position: absolute;
+  border-radius: 15px;
+  top: 15vh;
+  left: 1vw;
+  overflow: hidden;
+}
+
+.people-container .right-side-people .right-person-one .slideshowSlider {
+  white-space: nowrap;
+  -webkit-transition: ease 1000ms;
+  transition: ease 1000ms;
+}
+
+.people-container .right-side-people .right-person-one .slideshowSlider .slide {
+  display: inline-block;
+  height: 40vh;
+  width: 100%;
+}
+
+.people-container .right-side-people .right-person-one .slideshowSlider .slide img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 15px;
+}
+
+.people-container .right-side-people .right-person-two {
+  height: 15vh;
+  width: 38%;
+  background-color: #D55363;
+  position: absolute;
+  border-radius: 15px;
+  top: 5vh;
+  right: 1.5vw;
+}
+
+.people-container .right-side-people .right-person-two h2 {
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 2.5rem;
+}
+
+.people-container .right-side-people .right-person-two p {
+  color: #ffffff;
+  font-size: 1.2rem;
+  text-transform: capitalize;
+}
+
+.people-container .right-side-people .right-person-three {
+  height: 22vh;
+  width: 38%;
+  position: absolute;
+  border-radius: 15px;
+  top: 22vh;
+  right: 1.5vw;
+}
+
+.people-container .right-side-people .right-person-three img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 15px;
+}
+
+@media screen and (max-width: 900px) {
+  .people-container {
+    height: auto;
+  }
+  .people-container .left-side-people {
+    display: none;
+  }
+  .people-container .right-side-people {
+    display: none;
+  }
+}
+/*# sourceMappingURL=HeaderPeople.css.map */

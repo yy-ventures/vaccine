@@ -6,8 +6,8 @@ const JoinTheCauseRouter = () => {
     return (
         <section className="join-the-cause-router-section d-flex justify-content-around align-items-center flex-column flex-lg-row flex-md-row">
             <div className="text-center">
-                <h2>join the cause</h2>
-                <p>Help us achieve our goal to secure <br/> a better future for all</p>
+                <h2>join the movement</h2>
+                <p>Act to help achieve COVID-19 vaccines <br/> accessibility for all</p>
             </div>
             <div>
                 <Link to="/pledge"><button>pledge now</button></Link>

@@ -1,0 +1,35 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  overflow-x: hidden;
+}
+
+section.slider-section {
+  height: 100vh;
+}
+
+section.slider-section .logo-slider {
+  height: 30vh;
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 5em;
+  border-top: 2px solid #D55363;
+  border-bottom: 4px solid #3A8FC5;
+}
+
+section.slider-section .logo-slider .logo-div {
+  margin-top: 10%;
+  outline: none;
+}
+
+section.slider-section .logo-slider .logo-div img {
+  height: 15vh;
+}
+
+section.slider-section .logo-slider .slick-prev:before {
+  color: #3A8FC5;
+}
+
+section.slider-section .logo-slider .slick-next:before {
+  color: #3A8FC5;
+}
+/*# sourceMappingURL=LogoSlider.css.map */

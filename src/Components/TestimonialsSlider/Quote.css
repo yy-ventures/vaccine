@@ -1,0 +1,42 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  overflow-x: hidden;
+}
+
+#quote_container {
+  text-align: left;
+  vertical-align: middle;
+  padding: 0 5rem 0 5rem;
+  margin-top: 2rem;
+  height: 100%;
+}
+
+#testimonial {
+  font-size: 1.2rem;
+  font-style: italic;
+  font-weight: 300;
+  color: #3A8FC5;
+}
+
+#name {
+  font-weight: 500;
+  font-style: italic;
+  color: #4D4D4D;
+  margin-top: 1.2em;
+  margin-bottom: 0em;
+}
+
+#name:before {
+  content: '-';
+}
+
+#designation {
+  font-weight: 300;
+  font-style: italic;
+  margin-top: 0;
+}
+
+#lower_text {
+  bottom: 10%;
+}
+/*# sourceMappingURL=Quote.css.map */

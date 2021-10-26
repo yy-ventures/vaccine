@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,mBAAmB,CAAC;EAChB,OAAO,EAAE,IAAI;EACb,eAAe,EAAE,MAAM;CAS1B;;AAXD,AAGI,mBAHe,CAGf,GAAG,CAAC;EACA,KAAK,EAAE,GAAG;EAEV,UAAU,EAAE,KAAK;EACjB,MAAM,EAAE,iBAAiB;EACzB,aAAa,EAAE,IAAI;CAEtB",
+    "sources": [
+        "Headshot.scss"
+    ],
+    "names": [],
+    "file": "Headshot.css"
+}

@@ -1,0 +1,53 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  overflow-x: hidden;
+}
+
+.laureate-content-container p {
+  color: #4D4D4D;
+  font-size: 1.3vw;
+}
+
+.laureate-content-container h3 {
+  text-transform: uppercase;
+  font-size: 2vw;
+  color: #3A8FC5;
+  font-weight: bold;
+}
+
+.laureate-content-container h2 {
+  font-size: 3.8vw;
+  font-weight: bold;
+  color: #3A8FC5;
+}
+
+.laureate-content-container .laureate-count {
+  color: #D55363;
+}
+
+.laureate-content-container h5 {
+  color: #4D4D4D;
+}
+
+.laureate-content-container a {
+  text-decoration: none;
+  color: #3A8FC5;
+  font-size: 1.2vw;
+  text-transform: capitalize;
+}
+
+@media screen and (max-width: 900px) {
+  .laureate-content-container p {
+    font-size: 16px;
+  }
+  .laureate-content-container h3 {
+    font-size: 1.8rem;
+  }
+  .laureate-content-container h2 {
+    font-size: 2.5rem;
+  }
+  .laureate-content-container a {
+    font-size: 16px;
+  }
+}
+/*# sourceMappingURL=LaureateContent.css.map */

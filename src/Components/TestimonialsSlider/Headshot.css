@@ -1,0 +1,17 @@
+#headshot_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#headshot_container img {
+  width: 60%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border: 6px solid #D55363;
+  border-radius: 50px;
+}
+/*# sourceMappingURL=Headshot.css.map */

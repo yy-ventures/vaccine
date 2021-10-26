@@ -1,0 +1,48 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  overflow-x: hidden;
+}
+
+.person-description {
+  border: 5px solid rgba(1, 1, 1, 0);
+  position: relative;
+}
+
+.person-description img {
+  max-height: -webkit-fit-content;
+  max-height: -moz-fit-content;
+  max-height: fit-content;
+  height: 10vh;
+  border-radius: 35px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: 2;
+}
+
+.person-description p {
+  text-align: left;
+  position: absolute;
+  z-index: -1;
+  margin: 0;
+}
+
+.person-description p:nth-child(1) {
+  border-radius: 10px;
+  font-weight: 400;
+  padding: 0.4em 0.5em;
+  font-size: 0.8rem;
+  bottom: 20%;
+  left: 30%;
+  width: 50%;
+}
+
+.person-description p:nth-child(2) {
+  border-radius: 10px;
+  font-size: 0.6rem;
+  font-weight: 300;
+  padding: 0.2em 0.3em;
+  bottom: 0;
+  left: 30%;
+  width: 50%;
+}
+/*# sourceMappingURL=PersonSmall.css.map */

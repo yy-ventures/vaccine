@@ -1,0 +1,43 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  overflow-x: hidden;
+}
+
+.section-laureate {
+  min-height: 1000px;
+  background-color: #E6F6FF;
+  position: relative;
+  padding: 5rem 0 15rem 0;
+}
+
+.section-laureate .laureate-container {
+  height: 65vh;
+  margin: 0 auto;
+  width: 80%;
+  z-index: 500;
+}
+
+.section-laureate .corner-red-circle {
+  height: 400px;
+  width: 400px;
+  background-color: #D55363;
+  position: absolute;
+  left: 0;
+  top: 0;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 100%;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+@media screen and (max-width: 900px) {
+  .section-laureate {
+    height: 900px;
+    padding: 2rem 0;
+  }
+  .section-laureate .laureate-container {
+    height: 100%;
+    width: 90%;
+  }
+}
+/*# sourceMappingURL=Laureate.css.map */

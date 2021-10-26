@@ -1,0 +1,43 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  overflow-x: hidden;
+}
+
+.join-the-cause-router-section {
+  height: 40vh;
+  background-color: #E6F6FF;
+}
+
+.join-the-cause-router-section h2 {
+  color: #3A8FC5;
+  font-size: 3.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.join-the-cause-router-section p {
+  font-size: 1.4rem;
+  color: #4D4D4D;
+}
+
+.join-the-cause-router-section button {
+  padding: 14px 34px;
+  outline: none;
+  border: none;
+  background-color: #D55363;
+  font-weight: bold;
+  color: #ffffff;
+  border-radius: 15px;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 900px) {
+  .join-the-cause-router-section h2 {
+    font-size: 2rem;
+  }
+  .join-the-cause-router-section p {
+    font-size: 1rem;
+  }
+}
+/*# sourceMappingURL=JoinTheCauseRoute.css.map */

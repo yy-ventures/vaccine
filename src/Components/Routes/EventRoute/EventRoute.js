@@ -14,7 +14,37 @@ const EventRoute = () => {
         <section className="events-route-section">
             <Navbar/>
             <div className="events-route-section-container py-5">
-                <div className="events-route-header position-relative">
+                <div className="ongoing-events">
+                    <div className="ongoing-events-header">
+                        <h1>On going events</h1>
+                    </div>
+                    <div className="ongoing-events-body mt-5">
+                        <div className="row">
+                            <div className="col-lg-4 col-md-6 col-12 ongoing-events-body-data">
+                                <div><a href="https://peoplesvaccine.org/g20/"><img src={ppvImg} alt="ppv"/></a></div>
+                                <div className="p-4">
+                                    <h5>In the race against COVID-19</h5>
+                                    <p>None of us will cross the finish line unless we all do.</p>
+                                </div>
+                            </div>
+                            <div className="col-lg-4 col-md-6 col-12 ongoing-events-body-data">
+                            <div><a href="https://peoplesvaccine.org/g20/"><img src={ppvImg} alt="ppv"/></a></div>
+                                <div className="p-4">
+                                    <h5>In the race against COVID-19</h5>
+                                    <p>None of us will cross the finish line unless we all do.</p>
+                                </div>
+                            </div>
+                            <div className="col-lg-4 col-md-6 col-12 ongoing-events-body-data">
+                            <div><a href="https://peoplesvaccine.org/g20/"><img src={ppvImg} alt="ppv"/></a></div>
+                                <div className="p-4">
+                                    <h5>In the race against COVID-19</h5>
+                                    <p>None of us will cross the finish line unless we all do.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div className="events-route-header position-relative mt-5">
                     <div>
                         <h1>upcoming events</h1>
                         <h1 className="stroke">upcoming events</h1>

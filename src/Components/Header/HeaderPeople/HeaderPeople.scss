@@ -57,6 +57,19 @@
             border-radius: 15px;
             top: 37vh;
             left: 5vw;
+            overflow: hidden;
+            .slideshowSlider{
+                white-space: nowrap;
+                transition: ease 1000ms;
+                .slide{
+                    display: inline-block;
+                    height: 22vh;
+                    width: 100%;
+                    img{
+                        @include imageSize() 
+                    }
+                }
+            }
             img{
                 @include imageSize() 
              }
@@ -70,18 +83,8 @@
             border-radius: 15px;
             top: 15vh;
             left: 1vw;
-            overflow: hidden;
-            .slideshowSlider{
-                white-space: nowrap;
-                transition: ease 1000ms;
-                .slide{
-                    display: inline-block;
-                    height: 40vh;
-                    width: 100%;
-                    img{
-                        @include imageSize() 
-                    }
-                }
+            img{
+                @include imageSize() 
             }
         }
         .right-person-two{
@@ -112,9 +115,19 @@
             border-radius: 15px;
             top: 22vh;
             right: 1.5vw;
-            img{
-                @include imageSize() 
-             }
+            overflow: hidden;
+            .slideshowSlider{
+                white-space: nowrap;
+                transition: ease 1000ms;
+                .slide{
+                    display: inline-block;
+                    height: 22vh;
+                    width: 100%;
+                    img{
+                        @include imageSize() 
+                    }
+                }
+            }
         }
     }
 }

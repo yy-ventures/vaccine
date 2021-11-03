@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react';
-import secondFivePeople from "../../../assets/Data/PeopleData/SecondFivePeopleData.json"
+import thirdFivePeople from "../../../assets/Data/PeopleData/ThirdFivePeopleData";
 
-const SliderSecond = () => {
+const SlideThree = () => {
     const [secondIndex, setSecondIndex] = useState(0)
     const secondTimeoutRef = useRef(0)
     const secondDelay = 4700
@@ -15,7 +15,7 @@ const SliderSecond = () => {
     useEffect(()=>{
         secondResetTimeout()
         secondTimeoutRef.current = setTimeout(()=> setSecondIndex((prevIndex) => 
-            prevIndex === secondFivePeople.length - 1 ? 0 : prevIndex + 1
+            prevIndex === thirdFivePeople.length - 1 ? 0 : prevIndex + 1
         ), secondDelay)
         return ()=> {
             secondResetTimeout()
@@ -23,7 +23,7 @@ const SliderSecond = () => {
     }, [secondIndex])
     return (
         <div className="slideshowSlider" style={{ transform: `translate3d(${-secondIndex * 100}%, 0, 0)` }}>
-            {secondFivePeople.map((peopleImage, index) =>
+            {thirdFivePeople.map((peopleImage, index) =>
                 <div className="slide" key={index}>
                     <img src={peopleImage.image} alt="background" />
                 </div>)}
@@ -31,4 +31,4 @@ const SliderSecond = () => {
     );
 };
 
-export default SliderSecond;
+export default SlideThree;

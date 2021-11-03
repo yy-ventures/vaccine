@@ -1,11 +1,12 @@
 import "./HeaderPeople.scss";
 import malala from "../../../assets/people/yousafzai.png"
 import mairead from "../../../assets/people/mairead.jpg"
-
+import yunus from "../../../assets/people/yunus.jpg";
 import "./HeaderPeople.scss";
 import { motion } from "framer-motion"
 import SliderFirst from '../SliderFirst/SliderFirst';
 import SliderSecond from '../SliderSecond/SliderSecond';
+import SlideThree from "../SlideThree/SlideThree";
 
 const HeaderPeople = () => {
     // motion
@@ -28,13 +29,13 @@ const HeaderPeople = () => {
                         <p>countries</p>
                     </div>
                 </motion.div>
-                <motion.div initial="hidden" animate="visible" variants={variantsThree} transition={{ duration: 0.5 }} className="left-person-three">
-                    <img src={malala} alt="malala" />
+                <motion.div initial="hidden" animate="visible" variants={variantsThree} transition={{ duration: 0.5 }} className="left-person-three slideshow">
+                    <SlideThree/>
                 </motion.div>
             </div>
             <div className="col-md-6 right-side-people position-relative">
-                <motion.div initial="hidden" animate="visible" variants={variantsFour} transition={{ duration: 0.9 }}className="right-person-one slideshow">
-                    <SliderSecond/>
+                <motion.div initial="hidden" animate="visible" variants={variantsFour} transition={{ duration: 0.9 }} className="right-person-one slideshow">
+                    <img src={yunus} alt="yunus"/>
                 </motion.div>
                 <motion.div initial="hidden" animate="visible" variants={variantsFive} transition={{ duration: 0.5 }} className="right-person-two d-flex justify-content-center align-items-center">
                     <div className="text-center">
@@ -43,7 +44,7 @@ const HeaderPeople = () => {
                     </div>
                 </motion.div>
                 <motion.div initial="hidden" animate="visible" variants={variantsSix} transition={{ duration: 0.5 }}  className="right-person-three">
-                    <img src={mairead} alt="mairead" />
+                    <SlideThree/>
                 </motion.div>
             </div>
         </div>

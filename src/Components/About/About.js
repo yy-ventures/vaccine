@@ -31,9 +31,9 @@ const About = () => {
                                 <p>We, the undersigned, make this joint appeal to all the global leaders, international organizations, and governments to adopt legal measures and make official statements declaring COVID-19 vaccines as a Global Common Good, free from any patent right belonging to anyone.
                                 </p>
                             </div>
-                            <div className="mt-5">
+                            {/* <div className="mt-5">
                                 <a href="/">Learn more <FontAwesomeIcon icon={faChevronRight} /></a>
-                            </div>
+                            </div> */}
                         </div>
                     </div>
                 </div>

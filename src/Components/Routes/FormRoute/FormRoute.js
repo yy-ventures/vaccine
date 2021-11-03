@@ -3,9 +3,13 @@ import Navbar from '../../Shared/Navbar/Navbar';
 import "./FormRoute.scss";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faStarOfLife } from '@fortawesome/free-solid-svg-icons'
+import { useForm } from 'react-hook-form';
 
 const FormRoute = () => {
     document.title = "Join | Vaccine Common Goods"
+    const { register, handleSubmit, watch, formState: { errors } } = useForm();
+    const onSubmit = data => console.log(data);
+
     return (
         <section className="form-route-section">
             <Navbar/>
@@ -17,34 +21,34 @@ const FormRoute = () => {
                                 <h1>i pledge</h1>
                                 <h1 className="stroke">i pledge</h1>
                             </div>
-                            <p>Covid-19 Vaccine A Global Common Good Now</p>
+                            <p>To Make Covid-19 Vaccine A Global Common Good Now</p>
                         </div>
                     </div>
                     <div className="main-form-body-section">
-                        <form className="pb-5">
+                        <form className="pb-5" onSubmit={handleSubmit(onSubmit)}>
                             <div className="mt-5">
                                 {/* form first portion */}
-                                <h5><FontAwesomeIcon icon={faStarOfLife} /> marked fields are required.</h5>
+                                <h5>All fields marked with <sup><FontAwesomeIcon icon={faStarOfLife} /></sup> are required and must be filled.</h5>
                                 <div className="row mt-5">
                                     <div className="col-md-5">
-                                        <label>First Name: <FontAwesomeIcon icon={faStarOfLife} /></label>
-                                        <input type="" name="" placeholder="" required />
+                                        <label>First Name: <sup><FontAwesomeIcon icon={faStarOfLife} /></sup></label>
+                                        <input type="" name="" placeholder="" {...register("firstName")} required />
                                     </div>
                                     <div className="col-md-1"></div>
                                     <div className="col-md-5">
-                                        <label>Last Name: <FontAwesomeIcon icon={faStarOfLife} /></label>
-                                        <input type="" name="" placeholder="" required />
+                                        <label>Last Name: <sup><FontAwesomeIcon icon={faStarOfLife} /></sup></label>
+                                        <input type="" name="" placeholder="" {...register("lastName")} required />
                                     </div>
                                 </div>
                                 <div className="row mt-5">
                                     <div className="col-md-5">
-                                        <label>Email: <FontAwesomeIcon icon={faStarOfLife} /></label>
-                                        <input type="" name="" placeholder="" required />
+                                        <label>Email: <sup><FontAwesomeIcon icon={faStarOfLife} /></sup></label>
+                                        <input type="email" name="" placeholder="" {...register("email")} required />
                                     </div>
                                     <div className="col-md-1"></div>
                                     <div className="col-md-5">
-                                        <label>Country <FontAwesomeIcon icon={faStarOfLife} /></label>
-                                        <select className="form-select">
+                                        <label>Country <sup><FontAwesomeIcon icon={faStarOfLife} /></sup></label>
+                                        <select className="form-select" {...register("country")} required>
                                             <option value="Afganistan">Afghanistan</option>
                                             <option value="Albania">Albania</option>
                                             <option value="Algeria">Algeria</option>
@@ -296,28 +300,28 @@ const FormRoute = () => {
                                 </div>
                                 {/* form second portion */}
                                 <div className="row mt-5">
-                                    <h5 className="mt-5"><FontAwesomeIcon icon={faStarOfLife} /> Other Information(Optional)</h5>
+                                    <h5 className="mt-5">Other Information (optional)</h5>
                                 </div>
                                 <div className="row mt-5">
                                     <div className="col-md-5">
-                                        <label>Organization: <FontAwesomeIcon icon={faStarOfLife} /></label>
-                                        <input type="" name="" placeholder="" required />
+                                        <label>Organisation: </label>
+                                        <input type="text" name="" placeholder="" {...register("organisation")} />
                                     </div>
                                     <div className="col-md-1"></div>
                                     <div className="col-md-5">
-                                        <label>Destination: <FontAwesomeIcon icon={faStarOfLife} /></label>
-                                        <input type="" name="" placeholder="" required />
+                                        <label>Designation:</label>
+                                        <input type="" name="" placeholder="" />
                                     </div>
                                 </div>
                                 <div className="row mt-5">
                                     <div className="col-md-3">
-                                        <label>Age: <FontAwesomeIcon icon={faStarOfLife} /></label>
-                                        <input type="number" name="" placeholder="" required />
+                                        <label>Age:</label>
+                                        <input type="number" name="" placeholder="" {...register("age")} required />
                                     </div>
                                     <div className="col-md-3"></div>
                                     <div className="col-md-4">
-                                        <label>Gender <FontAwesomeIcon icon={faStarOfLife} /></label>
-                                        <select class="form-select">
+                                        <label>Gender</label>
+                                        <select class="form-select" {...register("gender")}>
                                             <option value="male">Male</option>
                                             <option value="female">Female</option>
                                             <option value="other">Other</option>
@@ -327,7 +331,7 @@ const FormRoute = () => {
                                 {/* form third portion */}
                                 <div className="mt-5">
                                     <div className="form-file-upload">
-                                        <h4>Profile Picture (Optional)</h4>
+                                        <h4>Profile Picture (optional)</h4>
                                         <p>If you would like to share photo or image to accompany your pledge, please upload. <br/> Files must be png, gif, png, jpg and not exceed 20MB.</p>
                                         <input type="file" className="form-control"/>
                                     </div>
@@ -335,13 +339,14 @@ const FormRoute = () => {
                                 {/* form fourth portion */}
                                 <div className="mt-5">
                                     <div className="form-check-upload">
-                                        <h4>Permission To Use Your Pledge <FontAwesomeIcon icon={faStarOfLife} /></h4>
-                                        <p>I agree that my individual pledge and photo can be used on the website or in social media to help inspire others to make a pledge</p>
-                                        <div class="form-check mt-4">
-                                            <input className="form-check-input me-2" type="checkbox" value="" id="flexCheckDefault"/>
-                                            <label className ="form-check-label pl-2" htmlFor="flexCheckDefault">
-                                            YES
-                                            </label>
+                                        <h4>Permission To Use Your Pledge <sup><FontAwesomeIcon icon={faStarOfLife} /></sup></h4>
+                                        <div className="d-flex">
+                                            <div class="form-check mt-4">
+                                                <input className="form-check-input me-2" type="checkbox" value="" id="flexCheckDefault" />
+                                            </div>
+                                            <div>
+                                                <p>I agree that my individual pledge and photo can be used on the website or in social media to help inspire others to make a pledge</p>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>

@@ -12,7 +12,7 @@ const ActivityRoute = () => {
             <Navbar/>
             <div className="activity-route-section-container py-5">
                 {/* activity list  */}
-                <div className="activity-list mt-3">
+                <div className="activity-list mt-3" id="activities-right">
                     <div className="activity-list-header text-center">
                         <img src={blueHand} alt="blue-hand" />
                         <h4 className="mt-3">Right to Free Access <br/> to the Vaccine for All</h4>
@@ -26,10 +26,10 @@ const ActivityRoute = () => {
                     </div>
                 </div>
                 {/* activity list  */}
-                <div className="activity-list mt-5">
+                <div className="activity-list mt-5" id="activities-transparency">
                     <div className="activity-list-header text-center">
                         <img src={redMagnify} alt="red-magnify" />
-                        <h4 className="mt-3">Right to Free Access <br/> to the Vaccine for All</h4>
+                        <h4 className="mt-3">Transparency in Determining <br/> Fair Return on Research <br/>Investments</h4>
                     </div>
                     <div className="activity-list-body mt-5">
                         <p>The research for a vaccine is a long process. The estimated time for development of a COVID-19 vaccine is about 18 months or less, which would be an absolute speed record.</p>
@@ -37,10 +37,10 @@ const ActivityRoute = () => {
                     </div>
                 </div>
                 {/* activity list  */}
-                <div className="activity-list mt-5">
+                <div className="activity-list mt-5" id="activities-action">
                     <div className="activity-list-header text-center">
                         <img src={yellowRight} alt="yellow-right" />
-                        <h4 className="mt-3">Right to Free Access <br/> to the Vaccine for All</h4>
+                        <h4 className="mt-3">World Action Plan <br/> on COVID-19 Vaccine</h4>
                     </div>
                     <div className="activity-list-body mt-5">
                         <p>We urge the World Health Organization to design a World Action Plan on COVID-19 vaccine. We appeal to them to set up an international committee responsible for monitoring the vaccine research and to assure equal access to the vaccine for all countries and all people within a publicly announced pre-determined time frame.</p>

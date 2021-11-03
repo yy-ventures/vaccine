@@ -34,7 +34,7 @@ function App() {
           <Route path="/events">
             <EventRoute />
           </Route>
-          <Route path="/activities">
+          <Route path="/activities/">
             <ActivityRoute />
           </Route>
           <Route exact path="/">

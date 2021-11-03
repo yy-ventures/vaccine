@@ -12,6 +12,16 @@
         margin: 0 auto;
         width: 80%;
         z-index: 500;
+        .laureate-video{
+            height: 720px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            .video-main{
+                height: 100%;
+                width: 1080px;
+            }
+        }
     }
     .corner-red-circle{
         height: 400px;

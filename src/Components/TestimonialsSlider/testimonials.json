@@ -1,20 +1,20 @@
 {
     "1":{
-        "name": "Malala Name",
-        "image": "https://i.ibb.co/NW3CX6V/Sharon-Stone.jpg",
-        "quote": "...To be accused of 'channeling' is to be dismissed as a ventriloquist's live dummy, derogated at not having a mind of one's own.",
-        "designation": "Chief Nobel Officer"
+        "name": "George Clooney",
+        "image": "https://i.ibb.co/7vjsTSX/george.jpg",
+        "quote": "...I support mandatory vaccines, period. To me, it's really simple. We can look out for one another and take care of one another, or we cannot.",
+        "designation": "Actor, Human Rights Activist"
     },
     "2":{
-        "name": "Mukwege Arteta",
-        "image": "https://i.ibb.co/NW3CX6V/Sharon-Stone.jpg",
-        "quote": "...To be accused of 'channeling' is to be dismissed as a ventriloquist's live dummy, derogated at not having a mind of one's own.",
-        "designation": "Chief Hello Officer"
+        "name": "Bono",
+        "image": "https://i.ibb.co/zmHxK6C/bono.jpg",
+        "quote": "...Where you live shouldn’t determine whether you get a Covid-19 vaccine.",
+        "designation": "Singer, Activitist"
     },
     "3":{
-        "name": "Leymah Name",
+        "name": "Sharon Stone",
         "image": "https://i.ibb.co/NW3CX6V/Sharon-Stone.jpg",
-        "quote": "...To be accused of 'channeling' is to be dismissed as a ventriloquist's live dummy, derogated at not having a mind of one's own.",
-        "designation": "Leymah Bye Bye Officer"
+        "quote": "...Join us in the appeal to declare COVID-19 vaccines as a Global Common Good.",
+        "designation": "Actress, Human Rights Activist"
     }
 }

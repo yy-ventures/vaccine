@@ -6,6 +6,7 @@ import yellowRight from "../../assets/yellow-right.svg"
 import Aos from "aos"
 import "aos/dist/aos.css"
 import { Link } from 'react-router-dom';
+import { HashLink } from 'react-router-hash-link';
 
 const Activities = () => {
     useEffect(()=> {
@@ -17,19 +18,19 @@ const Activities = () => {
                 <div className="row h-100">
                     <div className="col-md-4" data-aos="fade-up">
                         <div className="text-center">
-                            <Link to="/activities"><img src={blueHand} alt="blue-hand"/></Link>
+                            <HashLink to="/activities#activities-right"><img src={blueHand} alt="blue-hand"/></HashLink>
                             <p>Right to Free Access <br/> to the Vaccine for All</p>
                         </div>
                     </div>
                     <div className="col-md-4" data-aos="fade-up">
                         <div className="text-center">
-                            <Link to="/activities"><img src={redMagnify} alt="red-magnify"/></Link>
+                            <HashLink to="/activities#activities-transparency"><img src={redMagnify} alt="red-magnify"/></HashLink>
                             <p>Transparency in Determining <br/> Fair Return on Research <br/> Investments</p>
                         </div>
                     </div>
                     <div className="col-md-4" data-aos="fade-up">
                         <div className="text-center">
-                            <Link to="/activities"><img src={yellowRight} alt="yellow-right"/></Link>
+                            <HashLink to="/activities#activities-action"><img src={yellowRight} alt="yellow-right"/></HashLink>
                             <p>World Action Plan <br/> on COVID-19 Vaccine</p>
                         </div>
                     </div>

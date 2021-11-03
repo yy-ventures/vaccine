@@ -41,8 +41,8 @@
             right: 0;
             h2{
                 color: $white;
-                font-weight: bold;
-                font-size: 2.5rem;
+                font-weight: 900;
+                font-size: 2.8rem;
             }
             p{
                 color: $white;
@@ -85,7 +85,8 @@
             }
         }
         .right-person-two{
-            height: 15vh;
+            // height: 15vmin;
+            padding: 3% 5% 1% 5%;
             width: 38%;
             background-color: $secondaryColor;
             position: absolute;
@@ -94,8 +95,9 @@
             right: 1.5vw;
             h2{
                 color: $white;
-                font-weight: bold;
-                font-size: 2.5rem;
+                font-weight: 900;
+                font-size: 2.8rem;
+                margin-top: 2%;
             }
             p{
                 color: $white;

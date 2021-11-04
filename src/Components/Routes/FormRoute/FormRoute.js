@@ -316,7 +316,7 @@ const FormRoute = () => {
                                 <div className="row mt-5">
                                     <div className="col-md-3">
                                         <label>Age:</label>
-                                        <input type="number" name="" placeholder="" {...register("age")} required />
+                                        <input type="number" name="" placeholder="" {...register("age")}/>
                                     </div>
                                     <div className="col-md-3"></div>
                                     <div className="col-md-4">
@@ -342,7 +342,7 @@ const FormRoute = () => {
                                         <h4>Permission To Use Your Pledge <sup><FontAwesomeIcon icon={faStarOfLife} /></sup></h4>
                                         <div className="d-flex">
                                             <div class="form-check mt-4">
-                                                <input className="form-check-input me-2" type="checkbox" value="" id="flexCheckDefault" />
+                                                <input className="form-check-input me-2" type="checkbox" value="" id="flexCheckDefault" required/>
                                             </div>
                                             <div>
                                                 <p>I agree that my individual pledge and photo can be used on the website or in social media to help inspire others to make a pledge</p>

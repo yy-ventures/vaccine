@@ -30,7 +30,7 @@ const HeaderPeople = () => {
                     </div>
                 </motion.div>
                 <motion.div initial="hidden" animate="visible" variants={variantsThree} transition={{ duration: 0.5 }} className="left-person-three slideshow">
-                    <SlideThree/>
+                    <SliderSecond/>
                 </motion.div>
             </div>
             <div className="col-md-6 right-side-people position-relative">

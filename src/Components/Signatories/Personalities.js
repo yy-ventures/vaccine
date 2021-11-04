@@ -3,7 +3,7 @@ import PaginationComp from "./Pagination";
 import PeopleDescription from "./PeopleDescription";
 import personalities from "./personalities.json";
 import "./Personalities.scss";
-import leymah from "../../assets/people/leymah.jpg";
+import leymah from "../../assets/people/person.png";
 import Navbar from "../Shared/Navbar/Navbar";
 import JoinTheCauseRouter from "../Routes/JoinTheCauseRouter/JoinTheCauseRouter"
 

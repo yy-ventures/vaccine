@@ -37,8 +37,8 @@ export const Personalities = () => {
             return <PeopleDescription
               known_for={person.known_for}
               full_name={person.full_name}
-              key={person}
-              image={leymah}
+              key={person.id}
+              image={person.avatar}
             />
           })}</div>
         </div>

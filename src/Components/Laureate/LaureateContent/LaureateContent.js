@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPlus, faChevronRight } from '@fortawesome/free-solid-svg-icons'
 import Aos from "aos"
 import "aos/dist/aos.css"
+import { Link } from 'react-router-dom';
 
 const LaureateContent = () => {
     useEffect(()=> {
@@ -26,7 +27,7 @@ const LaureateContent = () => {
                     <h5>Former Heads of State & Government, <br/> Business Leaders, Celebrities, Academic <br/> Experts and Social Activists</h5>
                 </div>
                 <div className="mt-4">
-                    <a href="/">view full list <FontAwesomeIcon icon={faChevronRight}/></a>
+                    <Link to="/signatories">view full list <FontAwesomeIcon icon={faChevronRight}/></Link>
                 </div>
             </div>
         </div>

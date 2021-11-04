@@ -7,6 +7,7 @@ import { motion } from "framer-motion"
 import SliderFirst from '../SliderFirst/SliderFirst';
 import SliderSecond from '../SliderSecond/SliderSecond';
 import SlideThree from "../SlideThree/SlideThree";
+import { Link } from "react-router-dom";
 
 const HeaderPeople = () => {
     // motion
@@ -24,10 +25,12 @@ const HeaderPeople = () => {
                     <SliderFirst/>
                 </motion.div>
                 <motion.div initial="hidden" animate="visible" variants={variantsTwo} transition={{ duration: 0.5 }} className="left-person-two d-flex justify-content-center align-items-center">
-                    <div className="text-center">
-                        <h2>147</h2>
-                        <p>countries</p>
-                    </div>
+                    <Link to="/people-pledge">
+                        <div className="text-center">
+                            <h2>147</h2>
+                            <p>countries</p>
+                        </div>
+                    </Link>
                 </motion.div>
                 <motion.div initial="hidden" animate="visible" variants={variantsThree} transition={{ duration: 0.5 }} className="left-person-three slideshow">
                     <SliderSecond/>
@@ -38,10 +41,12 @@ const HeaderPeople = () => {
                     <img src={yunus} alt="yunus"/>
                 </motion.div>
                 <motion.div initial="hidden" animate="visible" variants={variantsFive} transition={{ duration: 0.5 }} className="right-person-two d-flex justify-content-center align-items-center">
-                    <div className="text-center">
-                        <h2>156</h2>
-                        <p>signatories</p>
-                    </div>
+                    <Link to="/signatories">
+                        <div className="text-center">
+                            <h2>156</h2>
+                            <p>signatories</p>
+                        </div>
+                    </Link>
                 </motion.div>
                 <motion.div initial="hidden" animate="visible" variants={variantsSix} transition={{ duration: 0.5 }}  className="right-person-three">
                     <SlideThree/>

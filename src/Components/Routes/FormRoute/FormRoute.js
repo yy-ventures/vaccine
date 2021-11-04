@@ -4,11 +4,38 @@ import "./FormRoute.scss";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faStarOfLife } from '@fortawesome/free-solid-svg-icons'
 import { useForm } from 'react-hook-form';
+import * as yup from "yup";
+
+const schema = yup.object().shape({
+    picture: yup.mixed()
+                .required("You need to import a file")
+                .test("fileSize", "The file is too large", (value) => {
+                    console.log(value)
+                    return value && value[0].size === 1000000
+                })
+                .test("fileSize", "The file is too large", (value) => {
+                    console.log(value)
+                    return value && value[0].size === 1000000
+                })
+})
 
 const FormRoute = () => {
     document.title = "Join | Vaccine Common Goods"
-    const { register, handleSubmit, watch, formState: { errors } } = useForm();
-    const onSubmit = data => console.log(data);
+    const { register, handleSubmit, formState: { errors } } = useForm({validationSchema : schema});
+    const onSubmit = data => {
+        fetch("http://localhost:5000/submit-pledge-data",{
+            method: "POST",
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(data)
+        })
+        .then(response => response.json())
+        .then(data => {
+            if(data) { alert("You have added a new service")}
+        })
+        .catch(error => {
+            console.error(error)
+        })
+    };
 
     return (
         <section className="form-route-section">
@@ -332,8 +359,9 @@ const FormRoute = () => {
                                 <div className="mt-5">
                                     <div className="form-file-upload">
                                         <h4>Profile Picture (optional)</h4>
-                                        <p>If you would like to share photo or image to accompany your pledge, please upload. <br/> Files must be png, gif, png, jpg and not exceed 20MB.</p>
-                                        <input type="file" className="form-control"/>
+                                        <p>If you would like to share photo or image to accompany your pledge, please upload. <br/> Files must be png, jpg or jpeg and not exceed 5MB.</p>
+                                        <input required type="file" className="form-control" {...register('picture')} accept="image/gif, image/jpeg, image/png"/>
+                                        {errors.picture && <p>{errors.picture.message}</p>}
                                     </div>
                                 </div>
                                 {/* form fourth portion */}

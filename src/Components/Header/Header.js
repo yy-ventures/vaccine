@@ -1,12 +1,16 @@
 import Navbar from '../Shared/Navbar/Navbar';
 import "./Header.scss"
 import HeaderPeople from './HeaderPeople/HeaderPeople';
-
+import vaccineLogo from "../../assets/vaccine-logo.svg"
+import { Link, NavLink } from 'react-router-dom';
 const Header = () => {
     return (
         <header>
             <Navbar/>
             <div className="header-container">
+            <div className="navbar-logo-mobile">
+                    <Link to="/"><img src={vaccineLogo} alt="vaccine-logo" /></Link>
+                </div>
                 <div className="row h-100">
                     <div className="col-md-4 header-feature-text d-flex align-items-center">
                         <div>

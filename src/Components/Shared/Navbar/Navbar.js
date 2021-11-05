@@ -15,6 +15,7 @@ const Navbar = () => {
     }
     return (
         <section className="navbar" ref={menuContainer}>
+            
             <div className="navbar-container d-flex align-items-center justify-content-between">
                 <div className="navbar-logo">
                     <Link to="/"><img src={vaccineLogo} alt="vaccine-logo" /></Link>

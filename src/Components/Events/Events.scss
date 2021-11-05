@@ -3,6 +3,10 @@
 .events-section{
     height: 100vh;
     position: relative;
+    @media screen and (max-width: 601px) {
+        height: auto;
+        padding-top: 5rem;
+    }
     .events-container{
         width: 80%;
         height: 80vh;

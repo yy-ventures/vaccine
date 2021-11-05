@@ -86,7 +86,8 @@
         height: 800px;
         .about-container{
             width: 85%;
-            height: 100%;
+            height: auto;
+            padding-bottom: 1rem;
             .about-data-container{
                 .declare-header{
                     font-size: 1.5rem;

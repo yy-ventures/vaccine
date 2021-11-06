@@ -49,7 +49,7 @@ export const Personalities = () => {
           })}</div>
         </div>
         <div className="py-5">
-          <div className="row py-5">
+          <div className="row pt-5">
             <PaginationComp
               postsPerPage={postsPerPage}
               totalPosts={personalities.length}

@@ -331,7 +331,7 @@ const FormRoute = () => {
                                 </div>
                                 {/* form second portion */}
                                 <div className="row mt-5">
-                                    <h5 className="mt-5">Other Information (optional)</h5>
+                                    <h5 className="mt-2">Other Information (optional)</h5>
                                 </div>
                                 <div className="row mt-5">
                                     <div className="col-md-5">
@@ -344,7 +344,7 @@ const FormRoute = () => {
                                         <input type="" name="" placeholder="" />
                                     </div>
                                 </div>
-                                <div className="row mt-5">
+                                <div className="row mt-2">
                                     <div className="col-md-3">
                                         <label>Age:</label>
                                         <input type="number" name="" placeholder="" {...register("age")}/>
@@ -383,7 +383,7 @@ const FormRoute = () => {
                                     </div>
                                 </div>
                                 {/* submit */}
-                                <div className="mt-5 submit-area">
+                                <div className="mt-2 submit-area">
                                     <button type="submit">i pledge</button>
                                 </div>
                             </div>

@@ -7,6 +7,9 @@ import leymah from "../../assets/people/person.png";
 import Navbar from "../Shared/Navbar/Navbar";
 import JoinTheCauseRouter from "../Routes/JoinTheCauseRouter/JoinTheCauseRouter"
 
+import vaccineLogo from "../../assets/vaccine-logo.svg"
+import { Link, NavLink } from 'react-router-dom';
+
 export const Personalities = () => {
   document.title = "Signatories | Vaccine Common Goods"
   const [posts] = useState(personalities);
@@ -23,6 +26,9 @@ export const Personalities = () => {
     <section className="personalities">
       <Navbar />
       <div className="personality-container">
+      <div className="navbar-logo-mobile">
+                    <Link to="/"><img src={vaccineLogo} alt="vaccine-logo" /></Link>
+                </div>
         <div className="personalities-header d-flex align-items-center">
           <div className="col-md-4 header-feature-text"> 
             <div className="position-relative">

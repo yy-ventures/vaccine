@@ -8,12 +8,18 @@ import avaazBlack from "../../../assets/avaaz-black.png";
 import ppvImg from "../../../assets/ppv.png"
 import JoinTheCauseRouter from '../JoinTheCauseRouter/JoinTheCauseRouter';
 
+import vaccineLogo from "../../../assets/vaccine-logo.svg"
+import { Link, NavLink } from 'react-router-dom';
+
 const EventRoute = () => {
     document.title = "Events | Vaccine Common Goods"
     return (
         <section className="events-route-section">
             <Navbar/>
             <div className="events-route-section-container py-5">
+            <div className="navbar-logo-mobile">
+                    <Link to="/"><img src={vaccineLogo} alt="vaccine-logo" /></Link>
+                </div>
                 <div className="ongoing-events">
                     <div className="ongoing-events-header">
                         <h1>On going events</h1>

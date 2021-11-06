@@ -3,12 +3,16 @@ import Navbar from '../../Shared/Navbar/Navbar';
 import "./PledgeRoute.scss";
 import pledgeData from "../../../assets/Data/PledgeData/PledgeData.json";
 import JoinTheCauseRouter from '../JoinTheCauseRouter/JoinTheCauseRouter';
-
+import vaccineLogo from "../../../assets/vaccine-logo.svg"
+import { Link, NavLink } from 'react-router-dom';
 const PledgeRoute = () => {
     return (
         <section className="pledge-route-section">
             <Navbar />
             <div className="pledge-route-container py-5">
+            <div className="navbar-logo-mobile">
+                    <Link to="/"><img src={vaccineLogo} alt="vaccine-logo" /></Link>
+                </div>
                 <div className="main-pledge-header-section d-flex align-items-lg-center justify-content-lg-between align-items-md-center justify-content-md-between flex-column flex-lg-row flex-md-row">
                     <div>
                         <div className="main-pledge-header position-relative">

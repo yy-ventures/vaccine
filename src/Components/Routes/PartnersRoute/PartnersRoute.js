@@ -6,12 +6,18 @@ import peopleVaccine from "../../../assets/partners/vaccine-people.svg";
 import avaaz from "../../../assets/partners/avaaz.svg";
 import JoinTheCauseRouter from '../JoinTheCauseRouter/JoinTheCauseRouter';
 
+import vaccineLogo from "../../../assets/vaccine-logo.svg"
+import { Link, NavLink } from 'react-router-dom';
+
 const PartnersRoute = () => {
     document.title = "Partners | Vaccine Common Goods"
     return (
         <section className="partners-route-section">
             <Navbar/>
             <div className="partners-route-container mt-4">
+            <div className="navbar-logo-mobile">
+                    <Link to="/"><img src={vaccineLogo} alt="vaccine-logo" /></Link>
+                </div>
                 <div className="partners-route-header position-relative mt-5">
                     <h1>partners</h1>
                     <h1 className="stroke">partners</h1>

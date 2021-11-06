@@ -6,11 +6,17 @@ import redMagnify from "../../../assets/red-magnify.svg";
 import yellowRight from "../../../assets/yellow-right.svg";
 import JoinTheCauseRouter from '../JoinTheCauseRouter/JoinTheCauseRouter';
 
+import vaccineLogo from "../../../assets/vaccine-logo.svg"
+import { Link, NavLink } from 'react-router-dom';
+
 const ActivityRoute = () => {
     return (
         <section className="activity-route-section">
             <Navbar/>
             <div className="activity-route-section-container py-5">
+            <div className="navbar-logo-mobile">
+                    <Link to="/"><img src={vaccineLogo} alt="vaccine-logo" /></Link>
+                </div>
                 {/* activity list  */}
                 <div className="activity-list mt-3" id="activities-right">
                     <div className="activity-list-header text-center">

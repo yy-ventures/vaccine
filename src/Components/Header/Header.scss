@@ -53,18 +53,6 @@ header{
             }
         }
     }
-    .corner-blue-circle{
-        height: 200px;
-        width: 200px;
-        background-color: $primaryColor;
-        position: absolute;
-        right: 0;
-        bottom: 0;
-        border-bottom-left-radius: 0;
-        border-bottom-right-radius: 0;
-        border-top-left-radius: 100%;
-        border-top-right-radius: 0;
-    }
 }
 
 @media screen and (max-width: 900px) {

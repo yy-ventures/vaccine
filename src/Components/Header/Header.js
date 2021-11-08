@@ -2,7 +2,7 @@ import Navbar from '../Shared/Navbar/Navbar';
 import "./Header.scss"
 import HeaderPeople from './HeaderPeople/HeaderPeople';
 import vaccineLogo from "../../assets/vaccine-logo.svg"
-import { Link, NavLink } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 const Header = () => {
     return (
         <header>
@@ -38,7 +38,6 @@ const Header = () => {
                     </div>
                 </div>
             </div>
-            <div className="corner-blue-circle"></div>
         </header>
     );
 };

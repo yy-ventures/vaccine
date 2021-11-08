@@ -14,32 +14,34 @@
         border: 2px solid darkcyan;
         background-color: white;
     }
-    p{
-        text-align: left;
-        // white-space: pre-wrap;
-        position: relative;
-        z-index: -1;
-        margin: 0;
-        left: -35px;
-        padding: 0.5em;
-        padding-left: 3em;
-    }
-    p:nth-child(1){
-        border: 1px solid $secondaryColor;
-        border-radius: 10px;
-        font-weight: 400;
-        font-size: 0.8rem;
-        // width: 50%;
-    }
-    p:nth-child(2){
-        border: 1px solid $primaryColor;
-        border-radius: 10px;
-        font-weight: 300;
-        // width: 50%;
-        font-size: 0.8rem;
-    }
-    p ~ p {
-        margin-top: 0.8em;
+    .people-description-data{
+        p{
+            text-align: left;
+            // white-space: pre-wrap;
+            position: relative;
+            z-index: -1;
+            margin: 0;
+            left: -35px;
+            padding: 0.5em;
+            padding-left: 3em;
+        }
+        p:nth-child(1){
+            border: 1px solid $secondaryColor;
+            border-radius: 10px;
+            font-weight: 400;
+            font-size: 0.8rem;
+            // width: 50%;
+        }
+        p:nth-child(2){
+            border: 1px solid $primaryColor;
+            border-radius: 10px;
+            font-weight: 300;
+            // width: 50%;
+            font-size: 0.8rem;
+        }
+        p ~ p {
+            margin-top: 0.8em;
+        }
     }
 }
 
@@ -47,19 +49,27 @@
     .people-description{
         text-align: center;
         img{
-            width: 120px;
+            width: 100%;
         }
-        p:nth-child(1){
-            text-align: center;
-            margin-top: 1rem;
-            margin-left: 4rem;
-            padding-left: 0;
-        }
-        p:nth-child(2){
-            text-align: center;
-            margin-top: 1rem;
-            margin-left: 4rem;
-            padding-left: 0;
+        .people-description-data{
+            p:nth-child(1){
+                text-align: left;
+                margin-top: 1rem;
+                margin-left: 4rem;
+                padding-left: 0;
+                border: 0;
+                font-size: 18px;
+                font-weight: 700;
+                color: $primaryColor;
+            }
+            p:nth-child(2){
+                text-align: left;
+                margin-top: 0rem;
+                margin-left: 4rem;
+                padding-left: 0;
+                border: 0;
+                font-size: 16px;
+            }
         }
     }
 }

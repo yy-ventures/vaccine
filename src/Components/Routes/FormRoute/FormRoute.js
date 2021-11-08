@@ -6,7 +6,7 @@ import { faStarOfLife } from '@fortawesome/free-solid-svg-icons'
 import { useForm } from 'react-hook-form';
 import * as yup from "yup";
 import vaccineLogo from "../../../assets/vaccine-logo.svg"
-import { Link, NavLink } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 const schema = yup.object().shape({
     picture: yup.mixed()
                 .required("You need to import a file")

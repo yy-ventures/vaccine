@@ -14,10 +14,12 @@ export default function PeopleDescription(props) {
                 />
               </div>
               <div className="col-lg-6 col-md-6 col-sm-4 p-0 d-flex flex-column justify-content-end people-description-data">
+              <div className="personality-box col-lg-6 col-md-6 col-sm-4 p-0 d-flex flex-column justify-content-end">
                 <p id="personality-name">{full_name}</p>
                 <p id="personality-status">{known_for}</p>
               </div>
             </div>
           </div>
+        </div>
     )
 }

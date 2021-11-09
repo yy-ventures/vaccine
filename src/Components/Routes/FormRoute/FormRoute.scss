@@ -77,7 +77,7 @@
                             width: 40%;
                             margin-top: 2rem;
                             &::-webkit-file-upload-button{
-                                background-color: red;
+                                background-color: $primaryColor;
                             }
                         }
                     }

@@ -2,19 +2,19 @@
     "1":{
         "name": "George Clooney",
         "image": "https://i.ibb.co/WG1NcHT/george.jpg",
-        "quote": "...I support mandatory vaccines, period. To me, it's really simple. We can look out for one another and take care of one another, or we cannot.",
+        "quote": "I support mandatory vaccines, period. To me, it's really simple. We can look out for one another and take care of one another, or we cannot.",
         "designation": "Actor, Human Rights Activist"
     },
     "2":{
         "name": "Bono",
         "image": "https://i.ibb.co/k2YnT2j/bono.jpg",
-        "quote": "...Where you live shouldn’t determine whether you get a Covid-19 vaccine.",
+        "quote": "Where you live shouldn’t determine whether you get a Covid-19 vaccine.",
         "designation": "Singer, Activitist"
     },
     "3":{
         "name": "Sharon Stone",
         "image": "https://i.ibb.co/NW3CX6V/Sharon-Stone.jpg",
-        "quote": "...Join us in the appeal to declare COVID-19 vaccines as a Global Common Good.",
+        "quote": "Join us in the appeal to declare COVID-19 vaccines as a Global Common Good.",
         "designation": "Actress, Human Rights Activist"
     }
 }

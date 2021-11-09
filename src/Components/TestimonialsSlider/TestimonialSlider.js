@@ -77,7 +77,7 @@ export default class TestimonialSlider extends React.Component {
 
     return (
       <>
-        <section className="testimonials  ">
+        <section className="testimonials">
           <div className="row carousel ">
             <div className="col-md-6 ">
               <Slider

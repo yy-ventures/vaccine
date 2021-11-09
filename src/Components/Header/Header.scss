@@ -29,7 +29,7 @@ header{
             .red-million{
                 font-weight: bold;
                 color: $secondaryColor;
-                font-size: 1.6rem;
+                font-size: 5vmin;
             }
             .signed-bold{
                 font-weight: bold;
@@ -44,13 +44,13 @@ header{
                 color: $textColor;
                 font-weight: 900;
                 text-transform: capitalize;
-                font-size: 2.1rem;
+                font-size: 5.5vmin;
             }
             p{
-                font-size: 1.2rem;
+                font-size: 3.5vmin;
                 color: $textColor;
                 margin-top: 2rem;
-                width: 60%;
+                width: 100%;
             }
         }
     }

@@ -1,6 +1,4 @@
 import "./HeaderPeople.scss";
-import malala from "../../../assets/people/yousafzai.png"
-import mairead from "../../../assets/people/mairead.jpg"
 import yunus from "../../../assets/people/yunus.jpg";
 import "./HeaderPeople.scss";
 import { motion } from "framer-motion"
@@ -25,10 +23,10 @@ const HeaderPeople = () => {
                     <SliderFirst/>
                 </motion.div>
                 <motion.div initial="hidden" animate="visible" variants={variantsTwo} transition={{ duration: 0.5 }} className="left-person-two d-flex justify-content-center align-items-center">
-                    <Link to="/people-pledge">
+                    <Link to="/signatories">
                         <div className="text-center">
-                            <h2>147</h2>
-                            <p>countries</p>
+                            <h2>156</h2>
+                            <p>signatories</p>
                         </div>
                     </Link>
                 </motion.div>
@@ -41,10 +39,10 @@ const HeaderPeople = () => {
                     <img src={yunus} alt="yunus"/>
                 </motion.div>
                 <motion.div initial="hidden" animate="visible" variants={variantsFive} transition={{ duration: 0.5 }} className="right-person-two d-flex justify-content-center align-items-center">
-                    <Link to="/signatories">
+                    <Link to="/people-pledge">
                         <div className="text-center">
-                            <h2 className="pt-2">156</h2>
-                            <p>signatories</p>
+                            <h2 className="pt-2">147</h2>
+                            <p>countries</p>
                         </div>
                     </Link>
                 </motion.div>

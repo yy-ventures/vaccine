@@ -5,17 +5,11 @@ import YouTube from 'react-youtube';
 const VideoComp = () => {
     const optsMob = {
         height: "360",
-        width: "100%",
-        playerVars: {
-            autoplay: 1
-        }
+        width: "100%"
     }
     const optsDesk = {
         height: "720",
-        width: "100%",
-        playerVars: {
-            autoplay: 1
-        }
+        width: "100%"
     }
     return (
         <section className="video-section">

@@ -5,7 +5,6 @@ import redMagnify from "../../assets/red-magnify.svg"
 import yellowRight from "../../assets/yellow-right.svg"
 import Aos from "aos"
 import "aos/dist/aos.css"
-import { Link } from 'react-router-dom';
 import { HashLink } from 'react-router-hash-link';
 
 const Activities = () => {

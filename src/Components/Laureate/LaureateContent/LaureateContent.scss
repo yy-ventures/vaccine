@@ -7,9 +7,9 @@
     }
     h3{
         text-transform: uppercase;
-        font-size: 2vw;
+        font-size: 5vmin;
         color: $primaryColor;
-        font-weight: bold;
+        font-weight: 900;
     }
     h2{
         font-size: 3.8vw;
@@ -23,11 +23,20 @@
         color: $textColor;
 
     }
+    h4{
+        color: $textColor;
+        font-size: 4vmin;
+        font-weight: 900;
+        text-transform: uppercase;
+    }
     a{
         text-decoration: none;
         color: $primaryColor;
         font-size: 1.2vw;
         text-transform: capitalize;
+    }
+    .yellow{
+        color: $optionalColor;
     }
 }
 @media screen and (max-width: 900px){

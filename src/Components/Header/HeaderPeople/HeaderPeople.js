@@ -10,7 +10,7 @@ import SlideThree from "../SlideThree/SlideThree";
 import { Link } from "react-router-dom";
 
 const HeaderPeople = () => {
-    // motion
+    
     const variantsOne = {hidden: {opacity: 0, y: -80}, visible: {opacity: 1, y: 0}}
     const variantsTwo = {hidden: {opacity: 0, y: 80}, visible: {opacity: 1, y: 0}}
     const variantsThree = {hidden: {opacity: 0, x: -80}, visible: {opacity: 1, x: 0}}
@@ -43,7 +43,7 @@ const HeaderPeople = () => {
                 <motion.div initial="hidden" animate="visible" variants={variantsFive} transition={{ duration: 0.5 }} className="right-person-two d-flex justify-content-center align-items-center">
                     <Link to="/signatories">
                         <div className="text-center">
-                            <h2>156</h2>
+                            <h2 className="pt-2">156</h2>
                             <p>signatories</p>
                         </div>
                     </Link>

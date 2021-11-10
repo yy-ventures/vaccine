@@ -1,16 +1,13 @@
 @import "../../global.scss";
 
 .events-section{
-    height: 100vh;
+    // height: 100vh;
+    padding: 10% 5%;
     position: relative;
     @media screen and (max-width: 601px) {
         height: auto;
-        padding-top: 5rem;
     }
     .events-container{
-        width: 80%;
-        height: 80vh;
-        z-index: 500;
         .events-header{
             h2{
                 color: $primaryColor;

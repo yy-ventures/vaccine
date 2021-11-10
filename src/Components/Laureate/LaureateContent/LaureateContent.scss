@@ -53,11 +53,15 @@
         a{
             font-size: 16px;
         }
+        h4{
+            font-size: 7vmin;
+            padding-bottom: 1rem;
+        }
     }  
 }
 
-@media screen and (min-width: 1441px){
-    .laureate-content-container{
-        margin-top: -1rem;
-    }  
-}
+// @media screen and (min-width: 1441px){
+//     .laureate-content-container{
+//         margin-top: -1rem;
+//     }  
+// }

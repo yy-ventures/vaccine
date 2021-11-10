@@ -3,12 +3,11 @@ import PaginationComp from "./Pagination";
 import PeopleDescription from "./PeopleDescription";
 import personalities from "./personalities.json";
 import "./Personalities.scss";
-import leymah from "../../assets/people/person.png";
 import Navbar from "../Shared/Navbar/Navbar";
 import JoinTheCauseRouter from "../Routes/JoinTheCauseRouter/JoinTheCauseRouter"
 
 import vaccineLogo from "../../assets/vaccine-logo.svg"
-import { Link, NavLink } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 export const Personalities = () => {
   document.title = "Signatories | Vaccine Common Goods"

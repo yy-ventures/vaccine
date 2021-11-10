@@ -14,19 +14,20 @@ $border: #ccc;
 $breakpointTablet: 900px;
 $breakpointMobile: 500px;
 
+// mobile logo
 .navbar-logo-mobile {
-    display: none;
-    position: absolute;
+  display: none;
+  position: absolute;
 
-    @media screen and (max-width: 900px) {
-      width: fit-content;
-    display: inline-block;
-    top:0;
-    left: 0;
-    img{
-    margin-top: 1.5rem;
-    margin-left: 1rem;
-    width: 120px;
+  @media screen and (max-width: 900px) {
+    width: fit-content;
+    display: block;
+    top: 2%;
+    left: 3%;
+    img {
+      margin-top: 1.5rem;
+      margin-left: 1rem;
+      width: 50%;
     }
-}
+  }
 }

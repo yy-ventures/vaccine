@@ -10,7 +10,7 @@ import vaccineLogo from "../../assets/vaccine-logo.svg"
 import { Link } from 'react-router-dom';
 
 export const Personalities = () => {
-  document.title = "Signatories | Vaccine Common Goods"
+  document.title = "Signatories | Vaccine Common Good"
   const [posts] = useState(personalities);
   //const [loading, setLoading] = useState(false);
   const [currentPage, setCurrentPage] = useState(1);

@@ -9,7 +9,7 @@ import TestimonialSlider from '../../TestimonialsSlider/TestimonialSlider';
 import VideoComp from '../../VideoComp/VideoComp';
 
 const HomeRoute = () => {
-    document.title = "Home | Vaccine Common Goods";
+    document.title = "Home | Vaccine Common Good";
     return (
         <>
             <Header/>

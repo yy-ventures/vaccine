@@ -21,7 +21,7 @@ const schema = yup.object().shape({
 })
 
 const FormRoute = () => {
-    document.title = "Join | Vaccine Common Goods"
+    document.title = "Join | Vaccine Common Good"
     const { register, handleSubmit, formState: { errors } } = useForm({validationSchema : schema});
     const onSubmit = data => {
         fetch("http://localhost:5000/submit-pledge-data",{

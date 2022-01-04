@@ -12,7 +12,7 @@ import vaccineLogo from "../../../assets/vaccine-logo.svg"
 import { Link, NavLink } from 'react-router-dom';
 
 const EventRoute = () => {
-    document.title = "Events | Vaccine Common Goods"
+    document.title = "Events | Vaccine Common Good"
     return (
         <section className="events-route-section">
             <Navbar/>
@@ -27,21 +27,21 @@ const EventRoute = () => {
                     <div className="ongoing-events-body mt-5">
                         <div className="row">
                             <div className="col-lg-4 col-md-6 col-12 ongoing-events-body-data">
-                                <div><a href="https://peoplesvaccine.org/g20/"><img src={ppvImg} alt="ppv"/></a></div>
+                                <div><a href="https://peoplesvaccine.org/g20/" target="_blank" rel="noreferrer"><img src={ppvImg} alt="ppv"/></a></div>
                                 <div className="p-4">
                                     <h5>In the race against COVID-19</h5>
                                     <p>None of us will cross the finish line unless we all do.</p>
                                 </div>
                             </div>
                             <div className="col-lg-4 col-md-6 col-12 ongoing-events-body-data">
-                            <div><a href="https://peoplesvaccine.org/g20/"><img src={ppvImg} alt="ppv"/></a></div>
+                            <div><a href="https://peoplesvaccine.org/g20/" target="_blank" rel="noreferrer"><img src={ppvImg} alt="ppv"/></a></div>
                                 <div className="p-4">
                                     <h5>In the race against COVID-19</h5>
                                     <p>None of us will cross the finish line unless we all do.</p>
                                 </div>
                             </div>
                             <div className="col-lg-4 col-md-6 col-12 ongoing-events-body-data">
-                            <div><a href="https://peoplesvaccine.org/g20/"><img src={ppvImg} alt="ppv"/></a></div>
+                            <div><a href="https://peoplesvaccine.org/g20/" target="_blank" rel="noreferrer"><img src={ppvImg} alt="ppv"/></a></div>
                                 <div className="p-4">
                                     <h5>In the race against COVID-19</h5>
                                     <p>None of us will cross the finish line unless we all do.</p>
@@ -72,7 +72,7 @@ const EventRoute = () => {
                     <h4>past events</h4>
                     <div className="row mt-5">
                         <div className="col-md-4">
-                            <a href="https://secure.avaaz.org/page/en/">
+                            <a href="https://secure.avaaz.org/page/en/" target="_blank" rel="noreferrer">
                                 <div>
                                     <div>
                                         <img src={avaazBlack} alt="avaaz" />
@@ -90,7 +90,7 @@ const EventRoute = () => {
                         </div>
                         <div className="col-md-1"></div>
                         <div className="col-md-4">
-                            <a href="https://peoplesvaccine.org/">
+                            <a href="https://peoplesvaccine.org/" target="_blank" rel="noreferrer">
                                 <div>
                                     <img src={ppvImg} alt="ppv-img" />
                                     <div className="d-flex align-items-center justify-content-center p-3 text-center box-footer">

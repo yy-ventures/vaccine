@@ -10,7 +10,7 @@ import vaccineLogo from "../../../assets/vaccine-logo.svg"
 import { Link, NavLink } from 'react-router-dom';
 
 const PartnersRoute = () => {
-    document.title = "Partners | Vaccine Common Goods"
+    document.title = "Partners | Vaccine Common Good"
     return (
         <section className="partners-route-section">
             <Navbar/>

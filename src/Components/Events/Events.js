@@ -21,7 +21,7 @@ const Events = () => {
                     <div className="events-body">
                         <div className="row">
                             <div className="col-md-6 mt-3" data-aos="fade-left">
-                                <a href="https://peoplesvaccine.org/">
+                                <a href="https://peoplesvaccine.org/" target="_blank" rel="noreferrer">
                                     <div className="card-data">
                                         <div className="vaccine-card-img">
                                             <img src={newVaccine} alt="new-vaccine" />
@@ -33,7 +33,7 @@ const Events = () => {
                                 </a>
                             </div>
                             <div className="col-md-6 mt-3" data-aos="fade-right">
-                                <a href="https://secure.avaaz.org/page/en/">
+                                <a href="https://secure.avaaz.org/page/en/" target="_blank" rel="noreferrer">
                                     <div className="card-data">
                                         <div className="avaaz-card-img">
                                             <img src={avaaz} alt="avaaz" />

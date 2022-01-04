@@ -1,10 +1,6 @@
 import {useState} from 'react';
-
-
 import "./Pagination.scss";
 import 'bootstrap/dist/css/bootstrap.min.css';
-
-
 import Pagination from 'react-bootstrap/Pagination';
 
 const setPage = (currentPage, delta, paginate, setCurrentPage) => {

@@ -22,7 +22,6 @@ export default function Personalities() {
    const indexOfLastPost = currentPage * postsPerPage;
    const indexOfFirstPost = indexOfLastPost - postsPerPage;
    const currentPosts = posts.slice(indexOfFirstPost, indexOfLastPost);
-    console.log(posts);
    // Change page
    const paginate = pageNumber => setCurrentPage(pageNumber);
    return (

@@ -277,7 +277,7 @@ const PledgeRoute = () => {
                 </div>
                 <div className="main-pledge-body-section">
                     <div className="row">
-                        {pledgeData.map(pledgePeople => <div className="col-lg-4 col-md-6 col-6 mt-4">
+                        {/* {pledgeData.map(pledgePeople => <div className="col-lg-4 col-md-6 col-6 mt-4">
                             <div className="row d-flex align-items-center">
                                 <div className="col-md-3">
                                     <div className="pledge-people-image">
@@ -291,7 +291,7 @@ const PledgeRoute = () => {
                                     </div>
                                 </div>
                             </div>
-                        </div>)}
+                        </div>)} */}
                     </div>
                 </div>
             </div>

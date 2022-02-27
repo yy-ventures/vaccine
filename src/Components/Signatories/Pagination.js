@@ -35,7 +35,7 @@ const PaginationEllipsisLogic = (number, index, paginate, setCurrentPage, curren
 function PaginationComp({ postsPerPage, totalPosts, paginate }) {
   const [currentPage, setCurrentPage] = useState(1);
   const pageNumbers = [];
-
+  
   for (let i = 1; i <= Math.ceil(totalPosts / postsPerPage); i++) {
     pageNumbers.push(i);
   }

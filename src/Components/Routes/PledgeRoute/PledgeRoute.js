@@ -1,11 +1,49 @@
-import React from 'react';
+import React, { useEffect, useState, useCallback } from 'react';
 import Navbar from '../../Shared/Navbar/Navbar';
 import "./PledgeRoute.scss";
-import pledgeData from "../../../assets/Data/PledgeData/PledgeData.json";
 import JoinTheCauseRouter from '../JoinTheCauseRouter/JoinTheCauseRouter';
 import vaccineLogo from "../../../assets/vaccine-logo.svg"
 import { Link, NavLink } from 'react-router-dom';
+import avatar from '../../../assets/person.png'
+import paginateStyle from './paginate.module.scss'
+import ReactPaginate from 'react-paginate';
+
 const PledgeRoute = () => {
+
+    const [plData, setPlData] = useState([])
+
+    let siteUrl = 'https://vaccine.yyventures.org' 
+
+    const [isPending, setIsPending] = useState(false)
+    const [pageLimit, setPageLimit] = useState(0)
+
+    const handlePlFetch = async () => {
+        const res = await fetch(`https://vaccine.yyventures.org/api/common-people`)
+        const data = await res.json()
+        const totalResponse = res.headers.get('x-total-count')
+        let totalPartialResponse = Math.ceil(totalResponse / 12)
+        setPlData(data.responses)
+        setPageLimit(totalPartialResponse)
+    }
+
+    useEffect(() => {
+        handlePlFetch()
+    }, [])
+
+    const HandlePerPage = useCallback( async (currentPage) => {
+        setIsPending(true)
+        const res = await fetch(`https://jsonplaceholder.typicode.com/posts?_page=${currentPage}&_limit=12`)
+        const data = await res.json()
+        return data
+    }, [])
+    
+    const handlePageClick = async (count) => {
+        let newCount = parseInt(count.selected) + 1
+        const fetchPerPage = await HandlePerPage(newCount)
+        setPlData(fetchPerPage)
+        setIsPending(false)
+    }
+
     return (
         <section className="pledge-route-section">
             <Navbar />
@@ -277,22 +315,39 @@ const PledgeRoute = () => {
                 </div>
                 <div className="main-pledge-body-section">
                     <div className="row">
-                        {/* {pledgeData.map(pledgePeople => <div className="col-lg-4 col-md-6 col-6 mt-4">
+                        {plData && plData.map(plDataN => <div className="col-lg-4 col-md-6 col-6 mt-4">
                             <div className="row d-flex align-items-center">
                                 <div className="col-md-3">
                                     <div className="pledge-people-image">
-                                        <img src={pledgePeople.image} alt={pledgePeople.name} />
+                                        {plDataN.profile_image === siteUrl ? <img src={avatar} alt={plDataN.first_name} />: <img src={plDataN.profile_image} alt={plDataN.first_name}/>}
                                     </div>
                                 </div>
                                 <div className="col-md-9 mt-4 ps-4">
                                     <div>
-                                        <h5>{pledgePeople.name}</h5>
-                                        <p>{pledgePeople.company}, {pledgePeople.country}</p>
+                                        <h5>{plDataN.first_name}</h5>
+                                        <p>{plDataN.organization}, {plDataN.country}</p>
                                     </div>
                                 </div>
                             </div>
-                        </div>)} */}
+                        </div>)}
                     </div>
+                </div>
+                <div className='main-pledge-footer-section'>
+                <ReactPaginate
+                    previousLabel={''} 
+                    previousClassName={'fa-solid fa-angles-left'}
+                    nextLabel={''}
+                    nextClassName={'fa-solid fa-angles-right'}
+                    breakLabel={'...'}
+                    pageCount={pageLimit}
+                    marginPagesDisplayed={3}
+                    onPageChange={handlePageClick}
+                    containerClassName={paginateStyle.ul_container}
+                    pageClassName={paginateStyle.btn}
+                    pageLinkClassName={'link'}
+                    activeClassName={paginateStyle.active}
+                    disabledClassName={paginateStyle.disabled}
+                />
                 </div>
             </div>
             <JoinTheCauseRouter/>

@@ -13,23 +13,29 @@ li{
 }
 
 .btn{
-    width: 28px;
-    height: 28px;
-    border-radius: 3px;
-    font-weight: 600;
-    color: #f2f2f2;
-    background-color: cornflowerblue;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    border: 2px solid cornflowerblue;
-    transition: 0.3s;
+    .link{
+        width: 35px;
+        height: 35px;
+        border-radius: 5px;
+        font-weight: 600;
+        color: #fff;
+        background-color: #3A8FC5;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        border: 2px solid #3A8FC5;
+        text-decoration: none;
+        transition: 0.3s;
+    }
+}
+.active{
+    .link{
+        background-color: #fff;
+        color: #3A8FC5;
+    }
 }
 
-.active{
-    background-color: #f2f2f2;
-    color: cornflowerblue;
-}
+
 
 .grid{
     display: grid;

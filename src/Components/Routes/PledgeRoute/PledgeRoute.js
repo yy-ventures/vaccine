@@ -1,9 +1,9 @@
-import React, { useEffect, useState, useCallback } from 'react';
+import React, { useEffect, useState } from 'react';
 import Navbar from '../../Shared/Navbar/Navbar';
 import "./PledgeRoute.scss";
 import JoinTheCauseRouter from '../JoinTheCauseRouter/JoinTheCauseRouter';
 import vaccineLogo from "../../../assets/vaccine-logo.svg"
-import { Link, NavLink } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import avatar from '../../../assets/person.png'
 import paginateStyle from './paginate.module.scss'
 import ReactPaginate from 'react-paginate';
@@ -17,9 +17,9 @@ const PledgeRoute = () => {
     const [isPending, setIsPending] = useState(false)
     const [pageLimit, setPageLimit] = useState(0)
     const [countryCount, setCountryCount] = useState(0)
+    const [newPageCount, setNewPageCount] = useState(0)
 
     const handlePlFetch = async () => {
-        
         const res = await fetch(`https://vaccine.yyventures.org/api/common-people?page=1&perpage=50&country=0`)
         const data = await res.json()
         // const totalResponse = res.headers.get('x-total-count')
@@ -32,18 +32,26 @@ const PledgeRoute = () => {
         handlePlFetch()
     }, [])
 
-    const HandlePerPage = useCallback( async (currentPage) => {
-        setIsPending(true)
-        const res = await fetch(`https://vaccine.yyventures.org/api/common-people?page=${currentPage}&perpage=50&country=${countryCount}`)
-        const data = await res.json()
-        return data
-    }, [])
+    // const HandlePerPage = useCallback( async (currentPage) => {
+    //     setIsPending(true)
+    //     const res = await fetch(`https://vaccine.yyventures.org/api/common-people?page=${currentPage}&perpage=50&country=${countryCount}`)
+    //     const data = await res.json()
+    //     return data
+    // }, [countryCount])
+
+    // const HandlePerPage = async (currentPage) => {
+    //     setIsPending(true)
+    //     const res = await fetch(`https://vaccine.yyventures.org/api/common-people?page=${currentPage}&perpage=50&country=${countryCount}`)
+    //     const data = await res.json()
+    //     return data
+    // }
     
-    const handlePageClick = async (count) => {
+    const handlePageClick = (count) => {
         let newCount = parseInt(count.selected) + 1
-        const fetchPerPage = await HandlePerPage(newCount)
-        setPlData(fetchPerPage.responses)
-        setIsPending(false)
+        // const fetchPerPage = await HandlePerPage(newCount)
+        // setPlData(fetchPerPage.responses)
+        // setIsPending(false)
+        setNewPageCount(newCount)
     }
 
     // get countries
@@ -54,16 +62,27 @@ const PledgeRoute = () => {
         const data = await res.json()
         setCountry(data.responses)
     }
+
     useEffect(()=> {
         getAllCountry()
     }, [])
+
+    useEffect(()=> {
+        setIsPending(true)
+        fetch(`https://vaccine.yyventures.org/api/common-people?page=${newPageCount}&perpage=50&country=${countryCount}`)
+            .then(res => res.json())
+            .then(data => {
+                setPlData(data.responses)
+                setIsPending(false)
+            })
+    }, [newPageCount, countryCount])
     
     // handle country change
-
     const handleCountry = e => {
         e.preventDefault()
-        setCountryCount(toString(e.target.value))
+        setCountryCount(parseInt(e.target.value))
     }
+
     return (
         <section className="pledge-route-section">
             <Navbar />
@@ -89,6 +108,7 @@ const PledgeRoute = () => {
                     </div>
                 </div>
                 <div className="main-pledge-body-section">
+                    {isPending && <p>Loading...</p>}
                     <div className="row">
                         {plData && plData.map(plDataN => <div className="col-lg-4 col-md-6 col-6 mt-4">
                             <div className="row d-flex align-items-center">

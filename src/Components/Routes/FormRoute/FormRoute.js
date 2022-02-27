@@ -7,6 +7,7 @@ import { useForm } from 'react-hook-form';
 import * as yup from "yup";
 import vaccineLogo from "../../../assets/vaccine-logo.svg"
 import { Link } from 'react-router-dom';
+
 const schema = yup.object().shape({
     picture: yup.mixed()
                 .required("You need to import a file")
@@ -24,14 +25,14 @@ const FormRoute = () => {
     document.title = "Join | Vaccine Common Good"
     const { register, handleSubmit, formState: { errors } } = useForm({validationSchema : schema});
     const onSubmit = data => {
-        fetch("http://localhost:5000/submit-pledge-data",{
+        fetch("https://vaccine.yyventures.org/api/common-people/create",{
             method: "POST",
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(data)
         })
         .then(response => response.json())
         .then(data => {
-            if(data) { alert("You have added a new service")}
+            if(data) { alert("Thanks for your pledge!")}
         })
         .catch(error => {
             console.error(error)
@@ -63,12 +64,12 @@ const FormRoute = () => {
                                 <div className="row mt-5">
                                     <div className="col-md-5">
                                         <label>First Name: <sup><FontAwesomeIcon icon={faStarOfLife} /></sup></label>
-                                        <input type="" name="" placeholder="" {...register("firstName")} required />
+                                        <input type="" name="" placeholder="" {...register("first_name")} required />
                                     </div>
                                     <div className="col-md-1"></div>
                                     <div className="col-md-5">
                                         <label>Last Name: <sup><FontAwesomeIcon icon={faStarOfLife} /></sup></label>
-                                        <input type="" name="" placeholder="" {...register("lastName")} required />
+                                        <input type="" name="" placeholder="" {...register("last_name")} required />
                                     </div>
                                 </div>
                                 <div className="row mt-5">
@@ -341,7 +342,7 @@ const FormRoute = () => {
                                     <div className="col-md-1"></div>
                                     <div className="col-md-5">
                                         <label>Designation:</label>
-                                        <input type="" name="" placeholder="" />
+                                        <input type="" name="" placeholder="" {...register("designation")}/> 
                                     </div>
                                 </div>
                                 <div className="row mt-2">
@@ -363,8 +364,8 @@ const FormRoute = () => {
                                 <div className="mt-5">
                                     <div className="form-file-upload">
                                         <h4>Profile Picture (optional)</h4>
-                                        <p>If you would like to share photo or image to accompany your pledge, please upload. <br/> Files must be png, jpg or jpeg and not exceed 5MB.</p>
-                                        <input required type="file" className="form-control" {...register('picture')} accept="image/gif, image/jpeg, image/png"/>
+                                        <p>If you would like to share photo or image to accompany your pledge, please upload. <br/> Files must be png, jpg or jpeg and not exceed 2MB.</p>
+                                        <input type="file" className="form-control" {...register('profile_image')} accept="image/gif, image/jpeg, image/png"/>
                                         {errors.picture && <p>{errors.picture.message}</p>}
                                     </div>
                                 </div>
@@ -374,7 +375,7 @@ const FormRoute = () => {
                                         <h4>Permission To Use Your Pledge <sup><FontAwesomeIcon icon={faStarOfLife} /></sup></h4>
                                         <div className="d-flex">
                                             <div class="form-check mt-4">
-                                                <input className="form-check-input me-2" type="checkbox" value="" id="flexCheckDefault" required/>
+                                                <input className="form-check-input me-2" type="checkbox" value="" id="flexCheckDefault" {...register("is_permission_use_pledge")} required/>
                                             </div>
                                             <div>
                                                 <p>I agree that my individual pledge and photo can be used on the website or in social media to help inspire others to make a pledge</p>

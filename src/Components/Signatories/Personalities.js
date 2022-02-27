@@ -1,7 +1,7 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import PaginationComp from "./Pagination";
 import PeopleDescription from "./PeopleDescription";
-import personalities from "./personalities.json";
+// import personalities from "./personalities.json";
 import "./Personalities.scss";
 import Navbar from "../Shared/Navbar/Navbar";
 import JoinTheCauseRouter from "../Routes/JoinTheCauseRouter/JoinTheCauseRouter"
@@ -11,16 +11,38 @@ import { Link } from 'react-router-dom';
 
 export const Personalities = () => {
   document.title = "Signatories | Vaccine Common Good"
+
+  // signatories data 
+  
+  const [personalities, setPersonalities] = useState([])
+  
+  let url = 'https://vaccine.yyventures.org/api/signatory?perpage=170'
+  
+  // let url = 'https://jsonplaceholder.typicode.com/users'
+
+  const handleFetch = async ()=> {
+    let res = await fetch(url)
+    let data = await res.json()
+    setPersonalities(data.responses)
+  } 
+  useEffect(()=> {
+    handleFetch()
+  }, [])
+
   const [posts] = useState(personalities);
+
   //const [loading, setLoading] = useState(false);
+
   const [currentPage, setCurrentPage] = useState(1);
   const [postsPerPage] = useState(15);
 
   const indexOfLastPost = currentPage * postsPerPage;
   const indexOfFirstPost = indexOfLastPost - postsPerPage;
-  const currentPosts = posts.slice(indexOfFirstPost, indexOfLastPost);
+  const currentPosts = personalities.slice(indexOfFirstPost, indexOfLastPost);
+
   // Change page
   const paginate = pageNumber => setCurrentPage(pageNumber);
+
   return (
     <section className="personalities">
       <Navbar />
@@ -40,10 +62,11 @@ export const Personalities = () => {
         <div>
           <div className="row">{currentPosts.map((person) => {
             return <PeopleDescription
-              known_for={person.known_for}
-              full_name={person.full_name}
+              known_for={person.designation}
+              first_name={person.first_name}
+              last_name={person.last_name}
               key={person.id}
-              image={person.avatar}
+              image={person.profile_image}
             />
           })}</div>
         </div>

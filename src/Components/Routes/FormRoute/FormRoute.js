@@ -1,42 +1,66 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Navbar from '../../Shared/Navbar/Navbar';
 import "./FormRoute.scss";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faStarOfLife } from '@fortawesome/free-solid-svg-icons'
 import { useForm } from 'react-hook-form';
-import * as yup from "yup";
 import vaccineLogo from "../../../assets/vaccine-logo.svg"
 import { Link } from 'react-router-dom';
 
-const schema = yup.object().shape({
-    picture: yup.mixed()
-                .required("You need to import a file")
-                .test("fileSize", "The file is too large", (value) => {
-                    console.log(value)
-                    return value && value[0].size === 1000000
-                })
-                .test("fileSize", "The file is too large", (value) => {
-                    console.log(value)
-                    return value && value[0].size === 1000000
-                })
-})
 
 const FormRoute = () => {
     document.title = "Join | Vaccine Common Good"
-    const { register, handleSubmit, formState: { errors } } = useForm({validationSchema : schema});
+    const { register, handleSubmit, formState: { errors } } = useForm();
+
+    
+    const [fileCheck, setFileCheck] = useState([])
+
+    // file check
+    const handleTestChange = (e) => {
+        let files = e.target.files[0]
+        let getLimit = 2097152
+        if(files.size > getLimit){
+            alert(`Please upload your file between 2MB, your file is ${Math.round(files.size / 1048576)}MB`)
+            e.target.value = ''
+        }else{
+            setFileCheck(files)
+        }
+    }
+    const mainForm = document.querySelector('#vaccineInputForm')
+
     const onSubmit = data => {
-        fetch("https://vaccine.yyventures.org/api/common-people/create",{
+        let headers = new Headers();
+        let formdata = new FormData();
+
+        formdata.append("first_name", data.first_name);
+        formdata.append("last_name", data.last_name);
+        formdata.append("email", data.email);
+        formdata.append("country", data.country);
+        formdata.append("organisation", data.organisation);
+        formdata.append("designation", data.designation);
+        formdata.append("age", data.age)
+        formdata.append("gender", data.gender)
+        formdata.append("is_permission_use_pledge", data.is_permission_use_pledge)
+        formdata.append("profile_image", fileCheck);
+
+        let requestOptions = {
             method: "POST",
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify(data)
+            body: formdata,
+            redirect: "follow",
+            headers: headers,
+        };
+        fetch("https://vaccine.yyventures.org/api/common-people/create", requestOptions)
+        .then((response) => response.json())
+        .then((data) => {
+            if (data) {
+                alert("Thanks For Your Application");
+                mainForm.reset()
+                window.location.reload();
+            }
         })
-        .then(response => response.json())
-        .then(data => {
-            if(data) { alert("Thanks for your pledge!")}
-        })
-        .catch(error => {
-            console.error(error)
-        })
+        .catch((error) => {
+            console.error(error);
+        });
     };
 
     return (
@@ -57,7 +81,7 @@ const FormRoute = () => {
                         </div>
                     </div>
                     <div className="main-form-body-section">
-                        <form className="pb-5" onSubmit={handleSubmit(onSubmit)}>
+                        <form className="pb-5" onSubmit={handleSubmit(onSubmit)} id="vaccineInputForm">
                             <div className="mt-5">
                                 {/* form first portion */}
                                 <h5>All fields marked with <sup><FontAwesomeIcon icon={faStarOfLife} /></sup> are required and must be filled.</h5>
@@ -365,7 +389,7 @@ const FormRoute = () => {
                                     <div className="form-file-upload">
                                         <h4>Profile Picture (optional)</h4>
                                         <p>If you would like to share photo or image to accompany your pledge, please upload. <br/> Files must be png, jpg or jpeg and not exceed 2MB.</p>
-                                        <input type="file" className="form-control" {...register('profile_image')} accept="image/gif, image/jpeg, image/png"/>
+                                        <input onChange={handleTestChange} type="file" className="form-control" {...register('profile_image')} accept="image/gif, image/jpeg, image/png"/>
                                         {errors.picture && <p>{errors.picture.message}</p>}
                                     </div>
                                 </div>

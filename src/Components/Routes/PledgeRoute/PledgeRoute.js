@@ -32,25 +32,9 @@ const PledgeRoute = () => {
         handlePlFetch()
     }, [])
 
-    // const HandlePerPage = useCallback( async (currentPage) => {
-    //     setIsPending(true)
-    //     const res = await fetch(`https://vaccine.yyventures.org/api/common-people?page=${currentPage}&perpage=50&country=${countryCount}`)
-    //     const data = await res.json()
-    //     return data
-    // }, [countryCount])
-
-    // const HandlePerPage = async (currentPage) => {
-    //     setIsPending(true)
-    //     const res = await fetch(`https://vaccine.yyventures.org/api/common-people?page=${currentPage}&perpage=50&country=${countryCount}`)
-    //     const data = await res.json()
-    //     return data
-    // }
     
     const handlePageClick = (count) => {
         let newCount = parseInt(count.selected) + 1
-        // const fetchPerPage = await HandlePerPage(newCount)
-        // setPlData(fetchPerPage.responses)
-        // setIsPending(false)
         setNewPageCount(newCount)
     }
 
@@ -109,7 +93,7 @@ const PledgeRoute = () => {
                 </div>
                 <div className="main-pledge-body-section">
                     {isPending && <p>Loading...</p>}
-                    <div className="row">
+                     <div className="row">
                         {plData && plData.map(plDataN => <div className="col-lg-4 col-md-6 col-6 mt-4">
                             <div className="row d-flex align-items-center">
                                 <div className="col-md-3">
